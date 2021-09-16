@@ -1,7 +1,7 @@
 body {
-   /*Background and background pic */
+  /* Background and background pic */
   background-image: url(images/Illustration.png);
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 100% 125%;
   background-color: #1c1a19;
@@ -10,13 +10,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
+
   /* Properties taken from page */
   height: 590px;
   width: 375px;
   top: 92px;
-  padding: 120px, 24px;
+  padding: 120px 24px;
 }
+
 header {
   /* Properties taken from page */
   height: 48px;
@@ -28,17 +29,18 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.nameLink{
+
+.nameLink {
   /* Properties taken from page */
   height: 44px;
   width: 101px;
   left: 12px;
   top: 2px;
-  padding: 10px, 12px;
+  padding: 10px 12px;
 
   /* Typography for John Doe */
   color: #fff;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -51,7 +53,8 @@ header {
   align-items: center;
   text-align: center;
 }
-.menuIcon{
+
+.menuIcon {
   height: 40px;
   width: 40px;
   left: 311px;
@@ -62,9 +65,10 @@ header {
   flex-direction: row;
   align-items: flex-start;
 }
+
 h1 {
   /* Typography for h1 */
-  font-family: Crete Round;
+  font-family: 'Crete Round', sans-serif;
   font-size: 56px;
   font-style: normal;
   font-weight: 400;
@@ -78,13 +82,14 @@ h1 {
   width: 327px;
   left: 24px;
   top: 120px;
-  border-radius: nullpx;
+  border-radius: 0;
   flex: none;
   margin: 12px;
 }
+
 h2 {
   /* Typography for h2 */
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-weight: bold;
   font-style: normal;
@@ -103,11 +108,12 @@ h2 {
   width: 327px;
   left: 24px;
   top: 256px;
-  border-radius: nullpx;
+  border-radius: 0;
 }
-h3{
+
+h3 {
   /* Typography for h3 */
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -120,13 +126,14 @@ h3{
   width: 327px;
   left: 24px;
   top: 295px;
-  border-radius: nullpx;
+  border-radius: 0;
   flex: none;
   order: 2;
   flex-grow: 0;
   margin: 12px;
 }
-.Icon{
+
+.Icon {
   /* Properties taken from page */
   height: 40px;
   width: 200px;
