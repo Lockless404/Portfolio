@@ -1,0 +1,137 @@
+body {
+  background-image: url(images/Illustration.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% 125%;
+  background-color: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 590px;
+  width: 375px;
+  top: 92px;
+  padding: 120px 24px;
+}
+
+header {
+  height: 48px;
+  width: 375px;
+  top: 44px;
+  background-color: #3c3a39;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nameLink {
+  height: 44px;
+  width: 101px;
+  left: 12px;
+  top: 2px;
+  padding: 10px 12px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: transparent;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.menuIcon {
+  height: 40px;
+  width: 40px;
+  left: 311px;
+  top: 4px;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+h1 {
+  /* Typography for h1 */
+  font-family: 'Crete Round', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+  color: #ff6b00;
+
+  /* Properties taken from page */
+  height: 124px;
+  width: 327px;
+  left: 24px;
+  top: 120px;
+  border-radius: 0;
+  flex: none;
+  margin: 12px;
+}
+
+h2 {
+  /* Typography for h2 */
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 32px;
+  text-align: left;
+  color: #fff5e1;
+
+  /* Properties taken from page */
+  display: flex;
+  align-items: center;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 12px;
+  height: 27px;
+  width: 327px;
+  left: 24px;
+  top: 256px;
+  border-radius: 0;
+}
+
+.firstParagraph {
+  /* Typography for h3 */
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+
+  /* Properties taken from page */
+  height: 123px;
+  width: 327px;
+  left: 24px;
+  top: 295px;
+  border-radius: 0;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 12px;
+}
+
+.Icon {
+  /* Properties taken from page */
+  height: 40px;
+  width: 200px;
+  left: 24px;
+  top: 430px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin: 12px;
+}
