@@ -1,57 +1,51 @@
-body{
-  /*Background and background pic*/
+body {
+   /*Background and background pic */
   background-image: url(images/Illustration.png);
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   background-attachment: fixed;
-  background-position:100% 125%;
-  background-color: #1C1A19;
-  /*Flexbox for whole page*/
+  background-position: 100% 125%;
+  background-color: #1c1a19;
+
+  /* Flexbox for whole page */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /*Properties taken from page*/
+  
+  /* Properties taken from page */
   height: 590px;
   width: 375px;
-  left: 0px;
   top: 92px;
-  border-radius: 0px;
-  padding: 120px, 24px, 120px, 24px;
-  
+  padding: 120px, 24px;
 }
-header{
-  /*Properties taken from page*/
+header {
+  /* Properties taken from page */
   height: 48px;
   width: 375px;
-  left: 0px;
-  right: 0px;
   top: 44px;
-  border-radius: 0px;
-  /*Background and flexbox for space*/
-  background-color: #3C3A39;
+
+  /* Background and flexbox for space */
+  background-color: #3c3a39;
   display: flex;
   justify-content: space-between;
 }
 .nameLink{
-  /*Properties taken from page*/
+  /* Properties taken from page */
   height: 44px;
   width: 101px;
   left: 12px;
   top: 2px;
-  border-radius: 0px;
-  padding: 10px, 12px, 10px, 12px;
+  padding: 10px, 12px;
 
-  /*Typography for John Doe*/
-  color:#FFFFFF;
+  /* Typography for John Doe */
+  color: #fff;
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: center;
   background-color: transparent;
   text-decoration: none;
-  /**/
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -67,10 +61,9 @@ header{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-
 }
 h1 {
-  /*Typography for h1*/
+  /* Typography for h1 */
   font-family: Crete Round;
   font-size: 56px;
   font-style: normal;
@@ -78,35 +71,34 @@ h1 {
   line-height: 64px;
   letter-spacing: 0.3700000047683716px;
   text-align: left;
-  color: #FF6B00;
-  /*Properties taken from page*/
+  color: #ff6b00;
+
+  /* Properties taken from page */
   height: 124px;
   width: 327px;
   left: 24px;
   top: 120px;
   border-radius: nullpx;
   flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px;
 }
 h2 {
-  /*Typography for h2*/
+  /* Typography for h2 */
   font-family: Roboto;
   font-size: 24px;
   font-weight: bold;
   font-style: normal;
   line-height: 32px;
-  letter-spacing: 0em;
   text-align: left;
-  color: #FFF5E1;
-  /*Properties taken from page*/
+  color: #fff5e1;
+
+  /* Properties taken from page */
   display: flex;
   align-items: center;
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px;
   height: 27px;
   width: 327px;
   left: 24px;
@@ -114,16 +106,16 @@ h2 {
   border-radius: nullpx;
 }
 h3{
-  /*Typography for h3*/
+  /* Typography for h3 */
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
-  color: #FFFFFF;
-  /*Properties taken from page*/
+  color: #fff;
+
+  /* Properties taken from page */
   height: 123px;
   width: 327px;
   left: 24px;
@@ -132,21 +124,19 @@ h3{
   flex: none;
   order: 2;
   flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px;
 }
 .Icon{
-  /*Properties taken from page*/
+  /* Properties taken from page */
   height: 40px;
   width: 200px;
   left: 24px;
   top: 430px;
-  border-radius: 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px;
 }
