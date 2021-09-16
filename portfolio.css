@@ -99,7 +99,7 @@ h2 {
   border-radius: 0;
 }
 
-h3 {
+.firstParagraph {
   /* Typography for h3 */
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
