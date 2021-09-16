@@ -1,17 +1,12 @@
 body {
-  /* Background and background pic */
   background-image: url(images/Illustration.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 100% 125%;
   background-color: #1c1a19;
-
-  /* Flexbox for whole page */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
-  /* Properties taken from page */
   height: 590px;
   width: 375px;
   top: 92px;
@@ -19,26 +14,20 @@ body {
 }
 
 header {
-  /* Properties taken from page */
   height: 48px;
   width: 375px;
   top: 44px;
-
-  /* Background and flexbox for space */
   background-color: #3c3a39;
   display: flex;
   justify-content: space-between;
 }
 
 .nameLink {
-  /* Properties taken from page */
   height: 44px;
   width: 101px;
   left: 12px;
   top: 2px;
   padding: 10px 12px;
-
-  /* Typography for John Doe */
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
