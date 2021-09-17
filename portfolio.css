@@ -1,7 +1,7 @@
 body {
   background-color: #e5e5e5;
-  
 }
+
 .firstPage {
   background-image: url(images/Illustration.png);
   background-repeat: no-repeat;
@@ -155,7 +155,7 @@ h2 {
   width: 327px;
   left: 24px;
   top: 120px;
-  border-bottom: .5px solid #bbb9b9;
+  border-bottom: 0.5px solid #bbb9b9;
   padding-top: 100px;
 }
 
@@ -167,30 +167,30 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
- .multiStories{
+
+.multiStories {
   font-family: 'Crete Round', sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: 44px;
-  letter-spacing: 0em;
   text-align: left;
   color: #091e42;
   height: 36px;
   width: 327px;
- }
+}
 
- .secondPara{
-font-family: 'Inter', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
-height: 147px;
-width: 327px;
-top: 48px;
-margin: auto;
+.secondPara {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  height: 147px;
+  width: 327px;
+  top: 48px;
+  margin: auto;
 }
 
 .languageList {
@@ -270,11 +270,11 @@ margin: auto;
   display: grid;
   height: 2436px;
   grid-template-columns: 327px;
-  grid-template-rows: 386px 386px 386px 386px 386px 386px ;
+  grid-template-rows: 386px 386px 386px 386px 386px 386px;
   align-content: space-between;
   padding-top: 24px;
   padding-left: 15px;
-} 
+}
 
 .cards {
   background-image: url(images/cardBack.png);
@@ -288,7 +288,7 @@ margin: auto;
 }
 
 h3 {
-  font-family: 'Crete Round',;
+  font-family: 'Crete Round', sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -313,21 +313,20 @@ h3 {
   position: relative;
   left: 13px;
   margin-right: 10px;
-  margin-top: 25px ;
+  margin-top: 25px;
 }
 
 .cardList {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  position: relative;
   color: #fff;
   list-style: none;
   height: 44px;
   width: 275px;
   position: relative;
   right: 35px;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .cardHtml {
@@ -415,18 +414,18 @@ h3 {
 }
 
 .aboutPara {
-font-family: 'Inter', serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
-color: #fff;
-position: relative;
-left: 10px;
-margin-right: 50px;
-bottom: 60px;
+  font-family: 'Inter', serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+  position: relative;
+  left: 10px;
+  margin-right: 50px;
+  bottom: 60px;
 }
 
 .aboutBtn {
@@ -473,7 +472,7 @@ bottom: 60px;
 .language {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   list-style-image: url(images/Tilted.png);
 }
 
@@ -484,7 +483,7 @@ bottom: 60px;
   list-style-image: url(images/Square.png);
 }
 
-.skills{
+.skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -497,6 +496,6 @@ bottom: 60px;
   font-style: normal;
   font-weight: 400;
   line-height: 43px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
 }
