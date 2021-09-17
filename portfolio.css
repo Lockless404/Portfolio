@@ -262,4 +262,125 @@ margin: auto;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+/*.projects {
+  display: grid;
+  height: 2436px;
+  grid-template-columns: 327px;
+  grid-template-rows: 386px 386px 386px 386px 386px 386px ;
+  align-content: space-between;
+} */
+
+.cards {
+  background-image: url(images/cardBack.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 386px;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h3 {
+  font-family: 'Crete Round',;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  color: #fff;
+  text-align: left;
+  position: relative;
+  height: 90px;
+  width: 295px;
+  left: 13px;
+  top: 52px;
+}
+
+.cardPara {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  text-align: left;
+  position: relative;
+  left: 13px;
+  margin-right: 10px;
+  margin-top: 25px ;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  color: #fff;
+  list-style: none;
+  height: 44px;
+  width: 275px;
+  position: relative;
+  right: 35px;
+  margin-top: 0px;
+}
+
+.cardHtml {
+  border: 1px solid #091e42;
+  padding: 13px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  background-color: #ffffff3d;
+}
+
+.cardBootstrap {
+  border: 1px solid #091e42;
+  padding: 13px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  background-color: #ffffff3d;
+}
+
+.cardRuby {
+  border: 1px solid #091e42;
+  padding: 13px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  background-color: #ffffff3d;
+}
+
+.cardBtn {
+  padding: 15px;
+  background-color: #ff6b00;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  width: 327px;
+  height: 48px;
+}
+
+.cardLnk {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
 }
