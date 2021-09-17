@@ -265,13 +265,15 @@ margin: auto;
   text-decoration: none;
 }
 
-/*.projects {
+.projects {
   display: grid;
   height: 2436px;
   grid-template-columns: 327px;
   grid-template-rows: 386px 386px 386px 386px 386px 386px ;
   align-content: space-between;
-} */
+  padding-top: 24px;
+  padding-left: 15px;
+} 
 
 .cards {
   background-image: url(images/cardBack.png);
