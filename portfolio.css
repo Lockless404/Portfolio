@@ -347,9 +347,6 @@ h3 {
 }
 
 .cardList {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   color: #fff;
   list-style: none;
   height: 44px;
@@ -360,6 +357,7 @@ h3 {
 }
 
 .cardHtml {
+  float: left;
   border: 1px solid #091e42;
   padding: 13px;
   font-family: 'Inter', sans-serif;
@@ -372,6 +370,7 @@ h3 {
 }
 
 .cardBootstrap {
+  float: left;
   border: 1px solid #091e42;
   padding: 13px;
   font-family: 'Inter', sans-serif;
@@ -384,6 +383,7 @@ h3 {
 }
 
 .cardRuby {
+  float: left;
   border: 1px solid #091e42;
   padding: 13px;
   font-family: 'Inter', sans-serif;
