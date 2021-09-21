@@ -20,7 +20,7 @@ To get a local copy up and running in your machine:
 
     1.Clone this repo or download the zip folder:
 
-      git clone https://github.com/Tofcookies/MyPortfolio/tree/mobile-version
+      git clone https://github.com/Lockless404/Portfolio.git
 
     2.Navigate to the location of the folder in your machine:
 
