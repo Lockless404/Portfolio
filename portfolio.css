@@ -630,7 +630,7 @@ input {
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
-  margin-top: 0 24px;
+  margin-top:24px;
   background-color: #e5e5e5;
   position: relative;
   right: 20px;
@@ -646,13 +646,13 @@ input {
   height: 18px;
   margin-top: 19px;
   padding-left: 10px;
-} 
+}
 
 textarea {
   width: 295px;
   height: 90px;
   font-family: 'Inter', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-style: normal;
   font-size: 15px;
   line-height: 24px;
