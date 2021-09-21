@@ -453,9 +453,9 @@ h3 {
   background-image: url(images/Frame.png);
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: 83% 32%;
+  background-position: 83% 28%;
   background-color: #1c1a19;
-  height: 1200px;
+  height: 1350px;
   width: 375px;
   padding: 120px 24px;
   position: relative;
@@ -593,21 +593,37 @@ h3 {
   text-align: center;
 }
 
+.formPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 844px;
+  width: 375px;
+  padding-top: 80px;
+  border-bottom: 1px solid #949190;
+}
+
 .about-me {
   width: 327px;
-  height: 216px;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 32px;
   line-height: 44px;
   text-align: center;
+  color: #172b4d;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
 }
 
 input {
-  display: flex;
-  flex-direction: column;
-  width: 327px;
+  width: 300px;
   height: 48px;
   padding: 0;
   border-top-style: hidden;
@@ -615,30 +631,108 @@ input {
   border-left-style: hidden;
   border-bottom-style: groove;
   margin-top: 0 24px;
+  background-color: #e5e5e5;
+  position: relative;
+  right: 20px;
 }
 
 .input-name {
-  width: 295px;
   height: 18px;
   padding-left: 10px;
-
+  margin-top: 19px;
 }
 
 .input-email {
-   width: 295px;
   height: 18px;
-  border-bottom: 1px solid #dbd8d7;
   margin-top: 19px;
   padding-left: 10px;
 } 
 
 textarea {
-  width: 303px;
+  width: 295px;
   height: 90px;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-weight: 400px;
   font-style: normal;
   font-size: 15px;
   line-height: 24px;
   padding: 0 24px;
+  margin-top: 24px;
+  background-color: #e5e5e5;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  position: relative;
+  right: 20px;
+}
+
+.touch-button {
+  padding: 15px;
+  background-color: #ff6b00;
+  border: 1px solid #ff6b00;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  width: 150px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin: 24px 0;
+}
+
+.touch-button:hover {
+  padding: 15px;
+  background-color: #fff5e1;
+  border: 1px solid #fff5e1;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  width: 150px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f55800;
+}
+
+.touch-button:active {
+  padding: 15px;
+  background-color: #e05304;
+  border: 1px solid #e05304;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  width: 150px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f4f1f0;
+}
+
+.footerLst {
+  /* Properties taken from page */
+  height: 40px;
+  width: 200px;
+  left: 24px;
+  top: 430px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+  position: sticky;
+  right: 35px;
 }
