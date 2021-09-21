@@ -39,6 +39,10 @@ To get a local copy up and running follow these simple example steps.
 👤 Hamza Bin Ali Tarar
 
 - GitHub: [@Lockless404](https://github.com/lockless404)
+
+👤 Oluwatofunmi Alugbin
+
+- GitHub: [@Lockless404](https://github.com/tofcookies)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
