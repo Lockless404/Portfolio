@@ -154,6 +154,7 @@ h2 {
   top: 120px;
   border-bottom: 0.5px solid #bbb9b9;
   padding-top: 100px;
+  margin-bottom: 80px;
 }
 
 .yogaImage {
@@ -822,7 +823,7 @@ textarea {
   }
 
   .secondPage {
-    height: 740px;
+    height: 505px;
     width: 1440px;
     display: flex;
     flex-direction: column;
@@ -832,7 +833,6 @@ textarea {
   }
 
   .yogaImage {
-    position: absolute;
     width: 684px;
     height: 448px;
   }
@@ -848,8 +848,8 @@ textarea {
     margin: 12px;
     margin-left: 0;
     position: relative;
-    left: 15px;
-    top: -40px;
+    left: -55px;
+    top: -30px;
   }
 
   .secondPara {
@@ -859,7 +859,7 @@ textarea {
     margin-left: 0;
     margin-top: 0;
     position: relative;
-    left: 15px;
+    left: -55px;
     top: -30px;
   }
 
@@ -868,6 +868,7 @@ textarea {
     margin: 12px;
     margin-left: 0;
     top: -40px;
+    left: -46px;
   }
 
   .seeButton {
@@ -875,6 +876,23 @@ textarea {
     margin: 12px;
     margin-left: 0;
     top: -95px;
+    left: -50px;
+  }
+
+  :hover.seeButton {
+    order: 3;
+    margin: 12px;
+    margin-left: 0;
+    top: -95px;
+    left: -50px;
+  }
+
+  :active.seeButton {
+    order: 3;
+    margin: 12px;
+    margin-left: 0;
+    top: -95px;
+    left: -50px;
   }
   
 }
