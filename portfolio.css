@@ -4,14 +4,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: auto;
+  width: 375px;
 }
 
 .firstPage {
   background-image: url(images/Illustration.png);
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: 90% 90%;
+  background-position: 100% 110%;
   background-color: #1c1a19;
   display: flex;
   flex-direction: column;
@@ -19,7 +20,7 @@ body {
   height: 500px;
   width: 375px;
   top: 92px;
-  padding: 120px 24px;
+  padding-top: 120px;
 }
 
 header {
@@ -31,6 +32,7 @@ header {
   justify-content: space-between;
   position: fixed;
   padding-bottom: 5px;
+  z-index: 1;
 }
 
 .nameLink {
@@ -45,7 +47,6 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
-  background-color: transparent;
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -311,7 +312,6 @@ h2 {
   grid-template-rows: 386px 386px 386px 386px 386px 386px;
   align-content: space-between;
   padding-top: 24px;
-  padding-left: 15px;
 }
 
 .cards {
@@ -323,6 +323,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-end;
 }
 
 h3 {
@@ -461,17 +462,18 @@ h3 {
   background-image: url(images/Frame.png);
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: 83% 28%;
+  background-position: 100% 22%;
   background-color: #1c1a19;
-  height: 1350px;
-  width: 375px;
-  padding: 120px 24px;
-  position: relative;
+  height: 1700px;
+  width: 351px;
   top: 120px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-end;
   margin: auto;
+  margin-top: 120px;
+  padding-left: 24px;
 }
 
 .aboutHead {
@@ -565,30 +567,47 @@ h3 {
   color: #fff;
   position: relative;
   border-top: 1px solid #fff;
-  margin-top: 150px;
-  padding-top: 50px;
+  margin-top: 120px;
+  padding-top: 80px;
   width: 260px;
+  align-self: center;
+  list-style: none;
+  justify-content: space-around;
+  height: 1000px;
+  right: 24px;
 }
 
-.language {
+.languageLst {
   display: flex;
   flex-direction: column;
   align-items: center;
-  list-style-image: url(images/Tilted.png);
+  list-style: none;
+  position: relative;
+  right: 15px;
+  justify-content: space-around;
+  height: 200px;
 }
 
-.frameworks {
+.frameworksLst {
   display: flex;
   flex-direction: column;
   align-items: center;
-  list-style-image: url(images/Square.png);
+  list-style: none;
+  position: relative;
+  right: 15px;
+  justify-content: space-around;
+  height: 250px;
 }
 
-.skills {
+.skillsLst {
   display: flex;
   flex-direction: column;
   align-items: center;
-  list-style-image: url(images/Circle.png);
+  list-style: none;
+  position: relative;
+  right: 15px;
+  justify-content: space-around;
+  height: 250px;
 }
 
 .innerLst {
