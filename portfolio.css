@@ -23,6 +23,7 @@ body {
   padding-top: 120px;
 }
 
+
 header {
   height: 48px;
   width: 375px;
@@ -67,7 +68,6 @@ header {
 }
 
 h1 {
-  /* Typography for h1 */
   font-family: 'Crete Round', sans-serif;
   font-size: 56px;
   font-style: normal;
@@ -76,8 +76,6 @@ h1 {
   letter-spacing: 0.3700000047683716px;
   text-align: left;
   color: #ff6b00;
-
-  /* Properties taken from page */
   height: 124px;
   width: 327px;
   left: 24px;
@@ -88,7 +86,6 @@ h1 {
 }
 
 h2 {
-  /* Typography for h2 */
   font-family: 'Roboto', sans-serif;
   font-size: 21px;
   font-weight: bold;
@@ -96,8 +93,6 @@ h2 {
   line-height: 32px;
   text-align: left;
   color: #fff5e1;
-
-  /* Properties taken from page */
   display: flex;
   align-items: center;
   flex: none;
@@ -112,7 +107,6 @@ h2 {
 }
 
 .firstParagraph {
-  /* Typography for h3 */
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -120,8 +114,6 @@ h2 {
   line-height: 24px;
   text-align: left;
   color: #fff;
-
-  /* Properties taken from page */
   height: 123px;
   width: 327px;
   left: 24px;
@@ -134,7 +126,6 @@ h2 {
 }
 
 .Icon {
-  /* Properties taken from page */
   height: 40px;
   width: 200px;
   left: 24px;
@@ -150,7 +141,6 @@ h2 {
 }
 
 .recentWorks {
-  /* typography for recentWorks */
   font-family: 'Crete Round', sans-serif;
   font-size: 37px;
   font-style: normal;
@@ -158,8 +148,6 @@ h2 {
   line-height: 52px;
   text-align: left;
   color: #1c1a19;
-
-  /* position */
   height: 85px;
   width: 327px;
   left: 24px;
@@ -169,7 +157,6 @@ h2 {
 }
 
 .yogaImage {
-  /* Image Position */
   height: 237px;
   width: 327px;
   display: block;
@@ -750,7 +737,6 @@ textarea {
 }
 
 .footerLst {
-  /* Properties taken from page */
   height: 40px;
   width: 200px;
   left: 24px;
@@ -762,4 +748,18 @@ textarea {
   justify-content: space-between;
   position: sticky;
   right: 35px;
+}
+
+@media (min-width:600px) {
+  body {
+    width: 1440px;
+    height: 7000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
 }
