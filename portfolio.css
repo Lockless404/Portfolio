@@ -835,12 +835,35 @@ textarea {
   .yogaImage {
     width: 684px;
     height: 448px;
+    position: relative;
+    top: 0;
+    left: 66px;
   }
 
   .recentWorks {
     border-bottom: 0;
     align-self: none;
     flex-basis: 100%;
+    text-align: left;
+    width: 1440px;
+    position: relative;
+    left: 155px;
+    top: 0;
+  } 
+  
+  .recentWorks:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 60%;
+  }
+    
+  .recentWorks:after {
+    left: 0.5em;
+    margin-right: -50%;
   }
 
   .multiStories {
@@ -848,7 +871,7 @@ textarea {
     margin: 12px;
     margin-left: 0;
     position: relative;
-    left: -55px;
+    left: 0;
     top: -30px;
   }
 
@@ -859,7 +882,7 @@ textarea {
     margin-left: 0;
     margin-top: 0;
     position: relative;
-    left: -55px;
+    left: 0;
     top: -30px;
   }
 
@@ -868,7 +891,7 @@ textarea {
     margin: 12px;
     margin-left: 0;
     top: -40px;
-    left: -46px;
+    left: -20px;
   }
 
   .seeButton {
@@ -876,7 +899,7 @@ textarea {
     margin: 12px;
     margin-left: 0;
     top: -95px;
-    left: -50px;
+    left: 0;
   }
 
   :hover.seeButton {
@@ -884,7 +907,7 @@ textarea {
     margin: 12px;
     margin-left: 0;
     top: -95px;
-    left: -50px;
+    left: 0;
   }
 
   :active.seeButton {
@@ -894,6 +917,142 @@ textarea {
     top: -95px;
     left: -50px;
   }
+
+  .projects {
+    display: grid;
+    height: 900px;
+    grid-template-columns: 369px 369px 369px;
+    grid-template-rows: 435px 435px;
+    align-content: space-between;
+    padding-top: 24px;
+    width: 1195px;
+    position: relative;
+    top: 0;
+    left: 35px;
+    grid-column-gap: 20px;
+  }
   
+  .cards {
+    height: 435px;
+    width: 369px;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    background-size: 369px 435px;
+  }
+
+  .cards:hover > h3 {
+    visibility: hidden;
+  }
+
+  .cards:hover > .cardList {
+    visibility: hidden;
+  }
+
+  .cards:hover > .cardPara {
+    visibility: hidden;
+  }
+
+  .cards:hover > .cardBtn {
+    visibility: visible;
+  }
+
+  .cardBtn {
+    position: absolute;
+    width: 369px;
+    height: 58px;
+    visibility: hidden;
+  }
+  
+  .cardBtn:hover {
+    position: absolute;
+    width: 369px;
+    height: 58px;
+  }
+
+  .cardBtn:hover {
+    position: absolute;
+    width: 369px;
+    height: 58px;
+  }
+
+  .aboutMe {
+    width: 1440px;
+    height: 1030px;
+    background-image: url(images/aboutmeBG.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 100% 6%;
+    background-size: 600px;
+    align-items: flex-start;
+  }
+
+  .aboutPara {
+    width: 490px;
+    position: relative;
+    top: 80px;
+    left: 130px;
+  }
+
+  .AboutHead {
+    position: relative;
+    top: 150px;
+    left: 120px;
+  }
+
+  .aboutBtn {
+    position: relative;
+    top: 90px;
+    left: 130px;
+  }
+
+  .bigLst {
+    width: 1100px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .languageLst {
+    align-items: flex-start;
+    position: relative;
+    top: 0;
+    left: -40px;
+  }
+
+  .frameworksLst {
+    align-items: flex-start;
+    position: relative;
+    top: 0;
+    left: -40px;
+  }
+
+  .skillsLst {
+    align-items: flex-start;
+    position: relative;
+    top: 0;
+    left: -40px;
+  }
+
+  .skills {
+    position: relative;
+    top: 0;
+    left: -150px;
+  }
+
+  .frameworks {
+    position: relative;
+    top: 0;
+    left: -120px;
+  }
+
+  .language {
+    position: relative;
+    top: 0;
+    left: -40px;
+  }
+
 }
 
