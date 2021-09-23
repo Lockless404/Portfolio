@@ -25,7 +25,7 @@ body {
 
 header {
   height: 48px;
-  width: 375px;
+  width: 315px;
   top: 0;
   background-color: #3c3a39;
   display: flex;
@@ -33,6 +33,12 @@ header {
   position: fixed;
   padding-bottom: 5px;
   z-index: 1;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.navLst {
+  display: none;
 }
 
 .nameLink {
@@ -40,7 +46,7 @@ header {
   width: 101px;
   left: 12px;
   top: 2px;
-  padding: 10px 12px;
+  padding-top: 6px;
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -67,7 +73,6 @@ header {
 }
 
 h1 {
-  /* Typography for h1 */
   font-family: 'Crete Round', sans-serif;
   font-size: 56px;
   font-style: normal;
@@ -76,8 +81,6 @@ h1 {
   letter-spacing: 0.3700000047683716px;
   text-align: left;
   color: #ff6b00;
-
-  /* Properties taken from page */
   height: 124px;
   width: 327px;
   left: 24px;
@@ -88,7 +91,6 @@ h1 {
 }
 
 h2 {
-  /* Typography for h2 */
   font-family: 'Roboto', sans-serif;
   font-size: 21px;
   font-weight: bold;
@@ -96,8 +98,6 @@ h2 {
   line-height: 32px;
   text-align: left;
   color: #fff5e1;
-
-  /* Properties taken from page */
   display: flex;
   align-items: center;
   flex: none;
@@ -112,7 +112,6 @@ h2 {
 }
 
 .firstParagraph {
-  /* Typography for h3 */
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -120,8 +119,6 @@ h2 {
   line-height: 24px;
   text-align: left;
   color: #fff;
-
-  /* Properties taken from page */
   height: 123px;
   width: 327px;
   left: 24px;
@@ -134,7 +131,6 @@ h2 {
 }
 
 .Icon {
-  /* Properties taken from page */
   height: 40px;
   width: 200px;
   left: 24px;
@@ -150,7 +146,6 @@ h2 {
 }
 
 .recentWorks {
-  /* typography for recentWorks */
   font-family: 'Crete Round', sans-serif;
   font-size: 37px;
   font-style: normal;
@@ -158,18 +153,16 @@ h2 {
   line-height: 52px;
   text-align: left;
   color: #1c1a19;
-
-  /* position */
   height: 85px;
   width: 327px;
   left: 24px;
   top: 120px;
   border-bottom: 0.5px solid #bbb9b9;
   padding-top: 100px;
+  margin-bottom: 80px;
 }
 
 .yogaImage {
-  /* Image Position */
   height: 237px;
   width: 327px;
   display: block;
@@ -750,7 +743,6 @@ textarea {
 }
 
 .footerLst {
-  /* Properties taken from page */
   height: 40px;
   width: 200px;
   left: 24px;
@@ -762,4 +754,383 @@ textarea {
   justify-content: space-between;
   position: sticky;
   right: 35px;
+}
+
+@media (min-width: 1000px) {
+  body {
+    width: 1440px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header {
+    width: 1140px;
+    padding-left: 150px;
+    padding-right: 150px;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 0;
+  }
+
+  .navLst {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+    text-decoration: none;
+    width: 300px;
+  }
+
+  .navWord {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Inter', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .navMail {
+    position: relative;
+    top: 4px;
+    left: 0;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+
+  .firstPage {
+    background-image: url(images/bigBG.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 100% 84%;
+    background-color: #1c1a19;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 740px;
+    width: 1440px;
+    top: 92px;
+    padding-top: 120px;
+    text-align: left;
+  }
+
+  .heyHead {
+    position: relative;
+    left: -400px;
+    top: 125px;
+  }
+
+  .developerHead {
+    position: relative;
+    left: -400px;
+    top: 125px;
+  }
+
+  .firstParagraph {
+    position: relative;
+    left: -330px;
+    top: 125px;
+    width: 470px;
+  }
+
+  .Icon {
+    position: relative;
+    right: 727px;
+    top: -150px;
+    left: -635px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style: none;
+    height: 200px;
+  }
+
+  .secondPage {
+    height: 505px;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .yogaImage {
+    width: 684px;
+    height: 448px;
+    position: relative;
+    top: 0;
+    left: 66px;
+  }
+
+  .recentWorks {
+    border-bottom: 0;
+    flex-basis: 100%;
+    text-align: left;
+    width: 1440px;
+    position: relative;
+    left: 155px;
+    top: 0;
+  }
+
+  .recentWorks::after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 60%;
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+  .multiStories {
+    order: 0;
+    margin: 12px;
+    margin-left: 0;
+    position: relative;
+    left: 0;
+    top: -30px;
+  }
+
+  .secondPara {
+    order: 1;
+    margin: 12px;
+    width: 385px;
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
+    left: 0;
+    top: -30px;
+  }
+
+  .languageList {
+    order: 2;
+    margin: 12px;
+    margin-left: 0;
+    top: -40px;
+    left: -20px;
+  }
+
+  .seeButton {
+    order: 3;
+    margin: 12px;
+    margin-left: 0;
+    top: -95px;
+    left: 0;
+  }
+
+  :hover.seeButton {
+    order: 3;
+    margin: 12px;
+    margin-left: 0;
+    top: -95px;
+    left: 0;
+  }
+
+  :active.seeButton {
+    order: 3;
+    margin: 12px;
+    margin-left: 0;
+    top: -95px;
+    left: -50px;
+  }
+
+  .projects {
+    display: grid;
+    height: 900px;
+    grid-template-columns: 369px 369px 369px;
+    grid-template-rows: 435px 435px;
+    align-content: space-between;
+    padding-top: 24px;
+    width: 1195px;
+    position: relative;
+    top: 0;
+    left: 35px;
+    grid-column-gap: 20px;
+  }
+
+  .cards {
+    height: 435px;
+    width: 369px;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    background-size: 369px 435px;
+  }
+
+  .cards:hover > h3 {
+    visibility: hidden;
+  }
+
+  .cards:hover > .cardList {
+    visibility: hidden;
+  }
+
+  .cards:hover > .cardPara {
+    visibility: hidden;
+  }
+
+  .cardBtn {
+    position: absolute;
+    width: 369px;
+    height: 58px;
+    visibility: hidden;
+  }
+
+  .cardBtn:hover {
+    position: absolute;
+    width: 369px;
+    height: 58px;
+  }
+
+  .cardBtn:active {
+    position: absolute;
+    width: 369px;
+    height: 58px;
+  }
+
+  .cards:hover > .cardBtn {
+    visibility: visible;
+  }
+
+  .aboutMe {
+    width: 1440px;
+    height: 1030px;
+    background-image: url(images/aboutmeBG.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 100% 6%;
+    background-size: 600px;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .aboutPara {
+    width: 490px;
+    position: relative;
+    top: 80px;
+    left: 130px;
+  }
+
+  .AboutHead {
+    position: relative;
+    top: 150px;
+    left: 120px;
+  }
+
+  .aboutBtn {
+    position: relative;
+    top: 90px;
+    left: 130px;
+  }
+
+  .bigLst {
+    width: 1100px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .languageLst {
+    align-items: flex-start;
+    position: relative;
+    top: 0;
+    left: -40px;
+  }
+
+  .frameworksLst {
+    align-items: flex-start;
+    position: relative;
+    top: 0;
+    left: -40px;
+  }
+
+  .skillsLst {
+    align-items: flex-start;
+    position: relative;
+    top: 0;
+    left: -40px;
+  }
+
+  .skills {
+    position: relative;
+    top: 0;
+    left: -150px;
+  }
+
+  .frameworks {
+    position: relative;
+    top: 0;
+    left: -120px;
+  }
+
+  .language {
+    position: relative;
+    top: 0;
+    left: -40px;
+  }
+
+  .formPage {
+    width: 1440px;
+    height: 550px;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+    min-height: 0;
+  }
+
+  .about-me {
+    position: relative;
+    top: 100px;
+    left: -395px;
+    text-align: left;
+    width: 400px;
+  }
+
+  .input-name {
+    width: 550px;
+    position: relative;
+    top: -147px;
+    left: 138px;
+  }
+
+  .input-email {
+    width: 550px;
+    position: relative;
+    top: -147px;
+    left: 138px;
+  }
+
+  .inputText {
+    width: 550px;
+    position: relative;
+    top: -147px;
+    left: 138px;
+    padding: 0;
+    padding-left: 10px;
+    background-color: #fbf8f7;
+  }
+
+  .touch-button {
+    position: relative;
+    top: -147px;
+    left: -69px;
+  }
 }
