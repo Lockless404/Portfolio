@@ -4,7 +4,7 @@
 
 > Creating a protfolio to display my current skill level.
 
-Fully functional on Mobile.
+Fully functional on mobile and desktop.
 
 ## Built With
 
@@ -13,7 +13,7 @@ Fully functional on Mobile.
 - No Technologies
 
 ## Live Demo
-images/demo.png
+https://raw.githack.com/Lockless404/Portfolio/desktop/portfolio.html
 
 ## Getting Started
 To get a local copy up and running in your machine:
@@ -26,20 +26,6 @@ To get a local copy up and running in your machine:
 
       you@your-Pc-name:~$ cd <folder>
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
 ## Authors
 
 👤 Hamza Bin Ali Tarar
@@ -49,11 +35,6 @@ To get a local copy up and running in your machine:
 👤 Oluwatofunmi Alugbin
 
 - GitHub: [@Lockless404](https://github.com/tofcookies)
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
