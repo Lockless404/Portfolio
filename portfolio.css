@@ -25,7 +25,7 @@ body {
 
 header {
   height: 48px;
-  width: 375px;
+  width: 315px;
   top: 0;
   background-color: #3c3a39;
   display: flex;
@@ -33,6 +33,12 @@ header {
   position: fixed;
   padding-bottom: 5px;
   z-index: 1;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.navLst {
+  display: none;
 }
 
 .nameLink {
@@ -40,7 +46,7 @@ header {
   width: 101px;
   left: 12px;
   top: 2px;
-  padding: 10px 12px;
+  padding-top: 6px;
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -750,7 +756,7 @@ textarea {
   right: 35px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
   body {
     width: 1440px;
     height: auto;
@@ -771,6 +777,37 @@ textarea {
     margin-left: 100px;
     margin-right: 100px;
     padding-bottom: 0;
+  }
+
+  .navLst {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+    text-decoration: none;
+    width: 300px;
+  }
+
+  .navWord {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Inter', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .navMail {
+    position: relative;
+    top: 4px;
+    left: 0;
+  }
+
+  .menuIcon {
+    display: none;
   }
 
   .firstPage {
@@ -1060,9 +1097,9 @@ textarea {
   }
 
   .about-me {
-    position: absolute;
-    top: 3850px;
-    left: 288px;
+    position: relative;
+    top: 100px;
+    left: -395px;
     text-align: left;
     width: 400px;
   }
@@ -1070,21 +1107,21 @@ textarea {
   .input-name {
     width: 550px;
     position: relative;
-    top: 35px;
+    top: -147px;
     left: 138px;
   }
 
   .input-email {
     width: 550px;
     position: relative;
-    top: 35px;
+    top: -147px;
     left: 138px;
   }
 
   .inputText {
     width: 550px;
     position: relative;
-    top: 35px;
+    top: -147px;
     left: 138px;
     padding: 0;
     padding-left: 10px;
@@ -1093,7 +1130,7 @@ textarea {
 
   .touch-button {
     position: relative;
-    top: 35px;
+    top: -147px;
     left: -69px;
   }
 }
