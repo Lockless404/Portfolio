@@ -754,7 +754,7 @@ textarea {
 @media (min-width:600px) {
   body {
     width: 1440px;
-    height: 7000px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -985,6 +985,7 @@ textarea {
     background-position: 100% 6%;
     background-size: 600px;
     align-items: flex-start;
+    padding: 0;
   }
 
   .aboutPara {
@@ -1052,6 +1053,53 @@ textarea {
     position: relative;
     top: 0;
     left: -40px;
+  }
+
+  .formPage {
+    width: 1440px;
+    height: 550px;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+    min-height: 0;
+  }
+
+  .about-me {
+    position: absolute;
+    top: 3850px;
+    left: 288px;
+    text-align: left;
+    width: 400px;
+  }
+
+  .input-name {
+    width: 550px;
+    position: relative;
+    top: 35px;
+    left: 138px;
+  }
+
+  .input-email {
+    width: 550px;
+    position: relative;
+    top: 35px;
+    left: 138px;
+  }
+
+  .inputText {
+    width: 550px;
+    position: relative;
+    top: 35px;
+    left: 138px;
+    padding: 0;
+    padding-left: 10px;
+    background-color: #fbf8f7;
+  }
+
+  .touch-button {
+    position: relative;
+    top: 35px;
+    left: -69px;
   }
 
 }
