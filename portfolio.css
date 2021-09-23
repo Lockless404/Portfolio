@@ -948,8 +948,11 @@ textarea {
     visibility: hidden;
   }
 
-  .cards:hover > .cardBtn {
-    visibility: visible;
+  .cardBtn {
+    position: absolute;
+    width: 369px;
+    height: 58px;
+    visibility: hidden;
   }
 
   .cardBtn:hover {
@@ -964,11 +967,8 @@ textarea {
     height: 58px;
   }
 
-  .cardBtn {
-    position: absolute;
-    width: 369px;
-    height: 58px;
-    visibility: hidden;
+  .cards:hover > .cardBtn {
+    visibility: visible;
   }
 
   .aboutMe {
