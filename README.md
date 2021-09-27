@@ -13,7 +13,7 @@ Fully functional on mobile and desktop.
 - No Technologies
 
 ## Live Demo
-https://raw.githack.com/Lockless404/Portfolio/master/portfolio.html
+https://lockless404.github.io/Portfolio/
 
 ## Getting Started
 To get a local copy up and running in your machine:
