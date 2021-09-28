@@ -1,0 +1,9 @@
+	Page titles	None
+	Image text alternatives** (<img alt="alt text">)	None
+	Text headings	None
+	Color contrast	None
+	Resize	None
+	Interaction	None
+	Moving content	None
+	Multimedia	None
+	The basic structure of the page	None
