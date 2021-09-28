@@ -475,11 +475,20 @@ h3 {
 
 .aboutHead {
   font-family: 'Crete Round', sans-serif;
-  font-size: 72px;
+  font-size: 56px;
   font-style: normal;
   font-weight: 400;
-  line-height: 88px;
+  line-height: 64px;
   letter-spacing: 0.3700000047683716px;
+  text-align: left;
+  color: #ff6b00;
+  height: 124px;
+  width: 327px;
+  padding-bottom: 20px;
+  border-radius: 0;
+  flex: none;
+  order: 0;
+  margin: 12px;
 }
 
 .aboutPara {
@@ -637,6 +646,7 @@ h3 {
   line-height: 44px;
   text-align: center;
   color: #172b4d;
+  order: 0;
 }
 
 form {
@@ -1031,7 +1041,7 @@ textarea {
     left: 130px;
   }
 
-  .AboutHead {
+  .aboutHead {
     position: relative;
     top: 150px;
     left: 120px;
@@ -1102,7 +1112,6 @@ textarea {
 
   .about-me {
     position: relative;
-    top: 100px;
     left: -395px;
     text-align: left;
     width: 400px;
@@ -1111,21 +1120,18 @@ textarea {
   .input-name {
     width: 550px;
     position: relative;
-    top: -147px;
     left: 138px;
   }
 
   .input-email {
     width: 550px;
     position: relative;
-    top: -147px;
     left: 138px;
   }
 
   .inputText {
     width: 550px;
     position: relative;
-    top: -147px;
     left: 138px;
     padding: 0;
     padding-left: 10px;
@@ -1134,7 +1140,6 @@ textarea {
 
   .touch-button {
     position: relative;
-    top: -147px;
     left: -69px;
   }
 }
