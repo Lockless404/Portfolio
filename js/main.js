@@ -15,7 +15,7 @@ const navDisappear = () => {
       nav.classList.remove('nav-active');
       menuIcon.classList.remove('turn');
     });
-  };
+  }
 };
 navDisappear();
 navAppear();
