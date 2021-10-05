@@ -39,7 +39,7 @@ nav {
 }
 
 .navLst {
-  position:absolute;
+  position: absolute;
   right: 0;
   height: 650px;
   display: none;
@@ -66,7 +66,7 @@ nav {
 
 .aWord {
   text-decoration: none;
-  color: #FFF5E1;
+  color: #fff5e1;
   font-family: 'Inter', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 32px;
   font-style: normal;
