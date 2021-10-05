@@ -10,5 +10,13 @@ const navAppear = () => {
   })
 }
 
-
+const navDisappear = () => { 
+  for (let i = 0; i < linkedWord.length; i++) { 
+    linkedWord[i].addEventListener('click', () => 
+    { nav.classList.remove('nav-active'); 
+    menuIcon.classList.remove('turn'); 
+  }) 
+} 
+} 
+navDisappear(); 
 navAppear();
