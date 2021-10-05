@@ -6,6 +6,7 @@ body {
   align-items: center;
   margin: auto;
   width: 375px;
+  overflow-x: hidden;
 }
 
 .firstPage {
@@ -23,7 +24,7 @@ body {
   padding-top: 120px;
 }
 
-header {
+nav {
   height: 48px;
   width: 315px;
   top: 0;
@@ -38,7 +39,40 @@ header {
 }
 
 .navLst {
+  position: absolute;
+  right: 0;
+  height: 650px;
   display: none;
+  width: 375px;
+  background-color: #3c3a39;
+  top: 0;
+  list-style: none;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.nav-active {
+  display: block;
+}
+
+.nav-disapear {
+  display: none;
+}
+
+.navWord {
+  border-bottom: 1px solid rgb(104, 99, 99);
+  margin: 30px;
+}
+
+.aWord {
+  text-decoration: none;
+  color: #fff5e1;
+  font-family: 'Inter', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-align: left;
 }
 
 .nameLink {
@@ -60,16 +94,35 @@ header {
   text-align: center;
 }
 
+.menuIcon div {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  margin: 3px;
+  transition: all 0.3s ease;
+}
+
 .menuIcon {
-  height: 40px;
-  width: 40px;
-  left: 311px;
-  top: 4px;
-  padding: 8px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  position: relative;
+  left: 0;
+  top: 17px;
+  cursor: pointer;
+}
+
+.turn .line1 {
+  transform: rotate(-45deg) translate(-3px, 4px);
+}
+
+.turn .line2 {
+  opacity: 0;
+}
+
+.turn .line3 {
+  transform: rotate(45deg) translate(-3px, -4px);
+}
+
+.navMail {
+  display: none;
 }
 
 h1 {
@@ -180,6 +233,7 @@ h2 {
   color: #091e42;
   height: 36px;
   width: 327px;
+  position: unset;
 }
 
 .secondPara {
@@ -298,7 +352,7 @@ h2 {
   letter-spacing: 0.03em;
 }
 
-.projects {
+#projects {
   display: grid;
   height: 2436px;
   grid-template-columns: 327px;
@@ -455,7 +509,7 @@ h3 {
   color: #f4f1f0;
 }
 
-.aboutMe {
+#aboutMe {
   background-image: url(images/Frame.png);
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -626,7 +680,7 @@ h3 {
   text-align: center;
 }
 
-.formPage {
+#formPage {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -780,7 +834,7 @@ textarea {
     justify-content: center;
   }
 
-  header {
+  nav {
     width: 1140px;
     padding-left: 150px;
     padding-right: 150px;
@@ -799,10 +853,16 @@ textarea {
     align-items: flex-end;
     list-style: none;
     text-decoration: none;
-    width: 300px;
+    width: auto;
+    height: 48px;
+    padding-top: 0;
+    padding-right: 0;
+    position: relative;
+    top: 15px;
+    background-color: transparent;
   }
 
-  .navWord {
+  .aWord {
     text-decoration: none;
     color: #fff;
     font-family: 'Inter', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -814,9 +874,14 @@ textarea {
     text-align: center;
   }
 
+  .navWord {
+    border: 0;
+  }
+
   .navMail {
+    display: block;
     position: relative;
-    top: 4px;
+    top: -27px;
     left: 0;
   }
 
@@ -964,7 +1029,7 @@ textarea {
     left: 0;
   }
 
-  .projects {
+  #projects {
     display: grid;
     height: 900px;
     grid-template-columns: 369px 369px 369px;
@@ -1022,7 +1087,7 @@ textarea {
     visibility: visible;
   }
 
-  .aboutMe {
+  #aboutMe {
     width: 1440px;
     height: 1030px;
     background-image: url(images/aboutmeBG.png);
@@ -1101,7 +1166,7 @@ textarea {
     left: -40px;
   }
 
-  .formPage {
+  #formPage {
     width: 1440px;
     height: 550px;
     padding: 0;

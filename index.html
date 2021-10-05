@@ -10,18 +10,22 @@
 </head>
 
 <body>
-  <header>
+  <nav>
     <a href="" class="nameLink">John Doe</a>
-    <nav>
-      <img src="images/Icon-Menu.png" alt="Menu Icon" class='menuIcon'>
+    <div>
       <ul class="navLst">
-        <li ><a class="navWord" href="">Portfolio</a></li>
-        <li ><a class="navWord" href="">About</a></li>
-        <li ><a class="navWord" href="">Contact</a></li>
-        <li ><a class="navMail" href=""><img src="images/iconMail.png" alt="Email Icon"></a></li>
+        <li class="navWord" ><a class="aWord" href="#projects">Portfolio</a></li>
+        <li class="navWord" ><a class="aWord" href="#aboutMe">About</a></li>
+        <li class="navWord" ><a class="aWord" href="#formPage">Contact</a></li>
+        <li ><a class="navMail" href="#bottom"><img src="images/iconMail.png" alt="Email Icon"></a></li>
       </ul>
-    </nav>
-  </header>
+      <div class="menuIcon">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+  </nav>
   <section class="firstPage">
     <h1 class="heyHead">Hey There. I'm Hamza</h1>
     <h2 class="developerHead">I’am a Software Developer</h2>
@@ -55,7 +59,7 @@
     </ul>
     <button class="seeButton">See Project</button>
   </section>
-  <section class="projects">
+  <section id="projects">
     <div class="cards">
       <h3>Profesional Art Printing Data</h3>
       <p class="cardPara">A daily selection of privately personalized reads; no accounts or sign-ups required. has been
@@ -123,7 +127,7 @@
       <button class="cardBtn">See Project</button>
     </div>
   </section>
-  <section class="aboutMe">
+  <section id="aboutMe">
     <h2 class="aboutHead">About me</h2>
     <p class="aboutPara">Hello I’m a software developer! I can help you build a product , feature or website Look
       through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate
@@ -164,7 +168,7 @@
       </li>
     </ul>
   </section>
-  <section class="formPage">
+  <section id="formPage">
     <h2 class="about-me">
       I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
     </h2>
@@ -175,7 +179,7 @@
       <button class="touch-button" type="submit">Get in touch</button>
     </form>
   </section>
-  <footer>
+  <footer id="bottom">
     <ul class="footerLst">
       <li><a href="" class="socialMedia"><img src="images/darkGitHub.png" alt="Github Icon" class="footerIcons"></a></li>
       <li><a href="" class="socialMedia"><img src="images/darkLinkedin.png" alt="Linkedin Icon" class="footerIcons"></a></li>
@@ -184,6 +188,7 @@
       <li><a href="" class="socialMedia"><img src="images/darkMedium.png" alt="Medium Icon" class="footerIcons"></a></li>
     </ul>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
