@@ -142,7 +142,12 @@ const popUpAppear = () => {
   });
 };
 
-
+popUpDisappear = () => { 
+  modalCloseButton.addEventListener('click', () => { 
+    modal.classList.remove('modal-appear'); 
+  }); 
+}; 
+popUpDisappear(); 
 navDisappear();
 navAppear();
 popUpAppear();
