@@ -915,6 +915,20 @@ textarea {
   right: 20px;
 }
 
+.error {
+  width: 295px;
+  padding: 0;
+  font-size: 13px;
+  color: #fff;
+  background-color: #c42828;
+  box-sizing: border-box;
+  display: none;
+}
+
+.error-active{
+  display: block;
+}
+
 .touch-button {
   padding: 15px;
   background-color: #ff6b00;

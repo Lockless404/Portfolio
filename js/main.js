@@ -2,9 +2,6 @@ const menuIcon = document.querySelector('.menuIcon');
 const nav = document.querySelector('.navLst');
 const linkedWord = document.querySelectorAll('.navWord');
 const modal = document.querySelector('.modals');
-const modal1 = document.querySelector('.modal1');
-let imageLink = document.querySelector('.modalImage').outerHTML;
-const button = document.querySelector('.cardBtn');
 const buttonOne = document.querySelector('.cardBtn.one');
 const buttonTwo = document.querySelector('.cardBtn.two');
 const buttonThree = document.querySelector('.cardBtn.three');
@@ -13,7 +10,30 @@ const buttonFive = document.querySelector('.cardBtn.five');
 const buttonSix = document.querySelector('.cardBtn.six');
 const projectButton = document.querySelector('.seeButton');
 const modalCloseButton = document.querySelector('.modalButtonClose');
-let heading = document.querySelector('.modalHeading').innerHTML;
+const form = document.getElementById('form');
+let email = document.getElementById('email');
+const error = document.querySelector('.error');
+
+
+showError = () => {
+    if ( !lower(email)) {
+      error.innerHTML = 'Please ensure your Email address is in lowercase.';
+      error.classList.add('error-active');
+    }
+};
+
+email.addEventListener('input', function (event) {
+  error.innerHTML = '';
+  error.classList.remove('error-active');
+})
+submission = () => {
+  form.addEventListener('submit', (event) => {
+    if (!lower(email)) {
+      showError();
+      event.preventDefault();
+    }
+  });
+};
 
 const navAppear = () => {
   menuIcon.addEventListener('click', () => {
@@ -37,7 +57,7 @@ const popUp1 = () => {
   });
 };
 
-let projectCollection = {
+const projectCollection = {
   project1: {
     heading: 'Multi Post Stories',
     tag1: 'html',
@@ -142,7 +162,8 @@ const popUpAppear = () => {
   });
 };
 
-
+submission();
+showError();
 navDisappear();
 navAppear();
 popUpAppear();
