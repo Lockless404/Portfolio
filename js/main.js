@@ -2,9 +2,6 @@ const menuIcon = document.querySelector('.menuIcon');
 const nav = document.querySelector('.navLst');
 const linkedWord = document.querySelectorAll('.navWord');
 const modal = document.querySelector('.modals');
-//const modal1 = document.querySelector('.modal1');
-//let imageLink = document.querySelector('.modalImage').outerHTML;
-//const button = document.querySelector('.cardBtn');
 const buttonOne = document.querySelector('.cardBtn.one');
 const buttonTwo = document.querySelector('.cardBtn.two');
 const buttonThree = document.querySelector('.cardBtn.three');
@@ -13,7 +10,6 @@ const buttonFive = document.querySelector('.cardBtn.five');
 const buttonSix = document.querySelector('.cardBtn.six');
 const projectButton = document.querySelector('.seeButton');
 const modalCloseButton = document.querySelector('.modalButtonClose');
-//let heading = document.querySelector('.modalHeading').innerHTML;
 
 const navAppear = () => {
   menuIcon.addEventListener('click', () => {
@@ -43,7 +39,7 @@ const projectCollection = {
     tag1: 'html',
     tag3: 'Bootstrap',
     tag2: 'Ruby on rails',
-    imageLink: '<div class=\"modalImage\"><img class=\"noTenImg\" src=\"images/tenBig.png\" alt=\"Big Number 10\"></div>',
+    imageLink: '<div class="modalImage"><img class="noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>',
     paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
   },
   project2: {
@@ -51,7 +47,7 @@ const projectCollection = {
     tag1: 'Empty',
     tag3: 'Empty',
     tag2: 'Empty',
-    imageLink: '<div class=\"modalImage\"><img class=\"noTenImg\" src=\"images/tenBig.png\" alt=\"Big Number 10\"></div>',
+    imageLink: '<div class="modalImage"><img class="noTenImg" src="imagestenBig.png" alt="Big Number 10"></div>',
     paragraph: 'Empty',
   },
   project3: {
@@ -59,7 +55,7 @@ const projectCollection = {
     tag1: 'Blah',
     tag3: 'Blah',
     tag2: 'Blah',
-    imageLink: '<div class=\"modalImage\"><img class=\"noTenImg\" src=\"images/tenBig.png\" alt=\"Big Number 10\"></div>',
+    imageLink: '<div class="modalImage"><img class="noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>',
     paragraph: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah',
   },
   project4: {
@@ -67,7 +63,7 @@ const projectCollection = {
     tag1: 'Meh',
     tag3: 'Meh',
     tag2: 'Meh',
-    imageLink: '<div class=\"modalImage\"><img class=\"noTenImg\" src=\"images/tenBig.png\" alt=\"Big Number 10\"></div>',
+    imageLink: '<div class="modalImage"><img class="noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>',
     paragraph: 'Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh',
   },
   project5: {
@@ -75,7 +71,7 @@ const projectCollection = {
     tag1: 'Boohoo',
     tag3: 'Boohoo',
     tag2: 'Boohoo',
-    imageLink: '<div class=\"modalImage\"><img class=\"noTenImg\" src=\"images/tenBig.png\" alt=\"Big Number 10\"></div>',
+    imageLink: '<div class="modalImage"><img class="noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>',
     paragraph: 'Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo',
   },
   project6: {
@@ -83,7 +79,7 @@ const projectCollection = {
     tag1: 'Kak',
     tag3: 'Kak',
     tag2: 'Kak',
-    imageLink: '<div class=\"modalImage\"><img class=\"noTenImg\" src=\"images/tenBig.png\" alt=\"Big Number 10\"></div>',
+    imageLink: '<div class="modalImage"><img class="noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>',
     paragraph: 'Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak',
   },
 };
