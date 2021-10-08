@@ -165,10 +165,10 @@ const popUpAppear = () => {
   });
 };
 
-const addData = (formName, formEmail, formMsg) => { 
-  const myStorage ={formName, formEmail, formMsg}; 
-  localStorage.setItem('myStorage', JSON.stringify(myStorage)); 
-} 
+const addData = (formName, formEmail, formMsg) => {
+  const myStorage = { formName, formEmail, formMsg };
+  localStorage.setItem('myStorage', JSON.stringify(myStorage));
+};
 
 form.addEventListener('input', () => {
   const name = document.getElementById('name');
@@ -177,11 +177,10 @@ form.addEventListener('input', () => {
   const formInput = {
     formName: name.value,
     formEmail: email.value,
-    formMsg : msg.value,
+    formMsg: msg.value,
   };
   addData(formInput.formName, formInput.formEmail, formInput.formMsg);
-})
-
+});
 
 submission();
 showError();
