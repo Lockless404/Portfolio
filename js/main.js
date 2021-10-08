@@ -73,7 +73,7 @@ const projectCollection = {
     heading: 'Empty',
     tag1: 'Empty',
     tag3: 'Empty',
-    tag2: 'Empty',imageLink: '<div class="modalImage"><img class="noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>',
+    tag2: 'Empty',
     imageLink: '<div class="modalImage"><img class="noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>',
     paragraph: 'Empty',
   },
