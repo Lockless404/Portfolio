@@ -182,6 +182,14 @@ form.addEventListener('input', () => {
   addData(formInput.formName, formInput.formEmail, formInput.formMsg);
 });
 
+const displayData = () => {
+  const data = JSON.parse(localStorage.getItem('myStorage'));
+  document.getElementById('name').value = data.formName;
+  document.getElementById('email').value = data.formEmail;
+  document.getElementById('msg').value = data.formMsg;
+}
+
+displayData();
 submission();
 showError();
 navDisappear();
