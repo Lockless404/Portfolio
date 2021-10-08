@@ -266,6 +266,7 @@ h2 {
   font-weight: 500;
   line-height: 20px;
   text-align: left;
+  margin: 5px;
 }
 
 .html {
@@ -277,6 +278,7 @@ h2 {
   font-weight: 500;
   line-height: 20px;
   text-align: left;
+  margin: 5px;
 }
 
 .bootstrap {
@@ -288,6 +290,7 @@ h2 {
   font-weight: 500;
   line-height: 20px;
   text-align: left;
+  margin: 5px;
 }
 
 .ruby {
@@ -299,6 +302,7 @@ h2 {
   font-weight: 500;
   line-height: 20px;
   text-align: left;
+  margin: 5px;
 }
 
 .seeButton {
@@ -345,6 +349,162 @@ h2 {
   left: 14px;
   font-family: 'Inter', sans-serif;
   font-size: 17px;
+  color: #f4f1f0;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.modals {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.modal-appear {
+  display: flex;
+}
+
+.modal1 {
+  height: 700px;
+  width: 335px;
+  padding: 15px 15px 15px 15px;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  opacity: 1;
+}
+
+.modalHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.modalHeading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 235px;
+}
+
+.modalButtonClose {
+  height: 20px;
+  width: 20px;
+  border: 0;
+  background-color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modalBadges ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 0;
+}
+
+.modalbadge {
+  border: 1px solid #091e42;
+  padding: 8px;
+  margin: 5px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+  list-style: none;
+}
+
+.noTenImg {
+  width: 300px;
+  height: 220px;
+}
+
+.modalPara {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  width: 300px;
+}
+
+.modalButtons {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.buttonIcons {
+  width: 20px;
+  height: 20px;
+}
+
+.modalButton {
+  padding: 12px;
+  background-color: #ff6b00;
+  border: 1px solid #ff6b00;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.modalButton:hover {
+  padding: 12px;
+  background-color: #fff5e1;
+  border: 1px solid #fff5e1;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #f55800;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.modalButton:active {
+  padding: 12px;
+  background-color: #e05304;
+  border: 1px solid #e05304;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
   color: #f4f1f0;
   font-style: normal;
   font-weight: 700;
@@ -755,6 +915,20 @@ textarea {
   right: 20px;
 }
 
+.error {
+  width: 295px;
+  padding: 0;
+  font-size: 13px;
+  color: #fff;
+  background-color: #c42828;
+  box-sizing: border-box;
+  display: none;
+}
+
+.error-active {
+  display: block;
+}
+
 .touch-button {
   padding: 15px;
   background-color: #ff6b00;
@@ -1027,6 +1201,38 @@ textarea {
     margin-left: 0;
     top: -95px;
     left: 0;
+  }
+
+  .modal1 {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 1152px;
+    height: 620px;
+  }
+
+  .modalHeader {
+    width: 1100px;
+  }
+
+  .noTenImg {
+    width: 630px;
+    height: 465px;
+  }
+
+  .modalPara {
+    width: 450px;
+    font-size: 17px;
+    line-height: 30px;
+    position: relative;
+    left: -450px;
+    top: 124px;
+  }
+
+  .modalButtons {
+    width: 260px;
+    position: relative;
+    top: 0;
+    left: -455px;
   }
 
   #projects {
