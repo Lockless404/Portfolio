@@ -165,6 +165,21 @@ const popUpAppear = () => {
   });
 };
 
+
+
+form.addEventListener('input', () => {
+  const name = document.getElementById('name');
+  const email = document.getElementById('email');
+  const msg = document.getElementById('msg');
+  const formInput = {
+    formName: name.value,
+    formEmail: email.value,
+    formMsg : msg.value,
+  };
+  addData(formInput.formName, formInput.formEmail, formInput.formMsg);
+})
+
+
 submission();
 showError();
 navDisappear();
