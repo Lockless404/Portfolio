@@ -165,7 +165,10 @@ const popUpAppear = () => {
   });
 };
 
-
+const addData = (formName, formEmail, formMsg) => { 
+  const myStorage ={formName, formEmail, formMsg}; 
+  localStorage.setItem('myStorage', JSON.stringify(myStorage)); 
+} 
 
 form.addEventListener('input', () => {
   const name = document.getElementById('name');
