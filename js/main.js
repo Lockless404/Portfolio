@@ -187,7 +187,7 @@ const displayData = () => {
   document.getElementById('name').value = data.formName;
   document.getElementById('email').value = data.formEmail;
   document.getElementById('msg').value = data.formMsg;
-}
+};
 
 displayData();
 submission();
