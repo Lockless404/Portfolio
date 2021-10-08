@@ -165,6 +165,31 @@ const popUpAppear = () => {
   });
 };
 
+const addData = (formName, formEmail, formMsg) => {
+  const myStorage = { formName, formEmail, formMsg };
+  localStorage.setItem('myStorage', JSON.stringify(myStorage));
+};
+
+form.addEventListener('input', () => {
+  const name = document.getElementById('name');
+  const email = document.getElementById('email');
+  const msg = document.getElementById('msg');
+  const formInput = {
+    formName: name.value,
+    formEmail: email.value,
+    formMsg: msg.value,
+  };
+  addData(formInput.formName, formInput.formEmail, formInput.formMsg);
+});
+
+const displayData = () => {
+  const data = JSON.parse(localStorage.getItem('myStorage'));
+  document.getElementById('name').value = data.formName;
+  document.getElementById('email').value = data.formEmail;
+  document.getElementById('msg').value = data.formMsg;
+};
+
+displayData();
 submission();
 showError();
 navDisappear();
