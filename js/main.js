@@ -14,6 +14,10 @@ const form = document.getElementById('form');
 const email = document.getElementById('email');
 const error = document.querySelector('.error');
 
+function lower (email) { 
+  const words = email.value.toLowerCase(); 
+  return words === email.value; 
+} 
 
 const showError = () => {
   if (!lower(email)) {
