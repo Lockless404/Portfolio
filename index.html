@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hamza's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="shortcut icon" href="#">
 </head>
 
@@ -63,27 +63,30 @@
   <section class="modals">
     <div class="modal1" id="modal1">  
       <div class="modalHeader">
-        <div class="modalHeading">Multi Post Stories</div>
+        <div class="modalHeading">${projects.heading}</div>
         <button class="modalButtonClose">&times;</button>
       </div>
       <div class="modalBadges">
         <ul>
-          <li class="modalbadge one">html</li>
-          <li class="modalbadge two">Bootstrap</li>
-          <li class="modalbadge three">Ruby on Rails</li>
+          <li class="modalbadge one">${projects.tag1}</li>
+          <li class="modalbadge two">${projects.tag2}</li>
+          <li class="modalbadge three">${projects.tag3}</li>
         </ul>
       </div>
-      <div class="modalImage"><img class= "noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>
-      <div class="modalPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</div>
+      <div class="modalImage"><img class= "noTenImg" src=${projects.imageLink} alt="Big Number 10">
+      </div>
+      <div class="modalPara">
+        ${projects.paragraph}
+      </div>
       <div class="modalButtons">
-          <button class="modalButton Live">
-            See Live
-            <img class= "buttonIcons live" src="images/liveIcon.png" alt="Live Icon">
-          </button>
-          <button class="modalButton Source">
-            See Source
-            <img class="buttonIcons Source" src="images/IconGitHubWhite.png" alt="Github Icon">
-          </button>
+        <button class="modalButton Live">
+          See Live
+          <img class= "buttonIcons live" src="images/liveIcon.png" alt="Live Icon">
+        </button>
+        <button class="modalButton Source">
+          See Source
+          <img class="buttonIcons Source" src="images/IconGitHubWhite.png" alt="Github Icon">
+        </button>
       </div>
     </div>
   </section>

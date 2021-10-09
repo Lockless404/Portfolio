@@ -377,14 +377,14 @@ h2 {
 }
 
 .modal1 {
-  height: 700px;
-  width: 335px;
+  height: 92%;
+  width: 89%;
   padding: 15px 15px 15px 15px;
   background-color: #fff;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   opacity: 1;
 }
@@ -393,7 +393,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 300px;
+  width: 100%;
 }
 
 .modalHeading {
@@ -417,6 +417,10 @@ h2 {
   cursor: pointer;
 }
 
+.modalBadges {
+  width: 100%;
+}
+
 .modalBadges ul {
   display: flex;
   flex-direction: row;
@@ -435,9 +439,16 @@ h2 {
   list-style: none;
 }
 
+.modalImage {
+width: 100%;
+max-width: 445px;
+height: 100%;
+box-sizing: border-box;
+}
+
 .noTenImg {
-  width: 300px;
-  height: 220px;
+  width: inherit;
+  height: inherit;
 }
 
 .modalPara {
@@ -447,12 +458,12 @@ h2 {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  width: 300px;
+  width: 100%;
 }
 
 .modalButtons {
   display: flex;
-  width: 300px;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -1190,34 +1201,48 @@ textarea {
 
   .modal1 {
     align-items: flex-start;
-    flex-wrap: wrap;
-    width: 1152px;
-    height: 620px;
+    width: 80%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-column-gap: 20px;
   }
 
   .modalHeader {
-    width: 1100px;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
   }
 
-  .noTenImg {
-    width: 630px;
-    height: 465px;
+  .modalButtonClose {
+    position: relative;
+    left: -25px;
+    top: 0;
   }
 
+  .modalBadges {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .modalImage {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 8;
+    max-width: unset;
+  }
+  
   .modalPara {
-    width: 450px;
     font-size: 17px;
     line-height: 30px;
-    position: relative;
-    left: -450px;
-    top: 124px;
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 3;
   }
 
   .modalButtons {
-    width: 260px;
-    position: relative;
-    top: 0;
-    left: -455px;
+    grid-column: 2 / span 1;
+    grid-row: 10 / span 1;
+    justify-content: flex-start;
+    margin-bottom: 0;
   }
 
   #projects {
@@ -1228,9 +1253,6 @@ textarea {
     align-content: space-between;
     padding-top: 24px;
     width: 1195px;
-    position: relative;
-    top: 0;
-    left: 35px;
     grid-column-gap: 20px;
   }
 
