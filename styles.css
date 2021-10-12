@@ -38,7 +38,7 @@ nav {
   padding-left: 30px;
 }
 
-.navLst {
+.navList {
   position: absolute;
   right: 0;
   height: 650px;
@@ -53,10 +53,6 @@ nav {
 
 .nav-active {
   display: block;
-}
-
-.nav-disapear {
-  display: none;
 }
 
 .navWord {
@@ -1021,7 +1017,7 @@ textarea {
     padding-bottom: 0;
   }
 
-  .navLst {
+  .navList {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -1079,7 +1075,7 @@ textarea {
     text-align: left;
   }
 
-  .heyHead {
+  .firstPageHeading {
     position: relative;
     left: -400px;
     top: 125px;
