@@ -35,7 +35,8 @@ const navAppear = () => {
     nav.classList.toggle('nav-active');
     menuIcon.classList.toggle('turn');
   });
-};
+};;
+navAppear();
 
 const navDisappear = () => {
   for (let i = 0; i < linkedWord.length; i += 1) {
@@ -45,6 +46,7 @@ const navDisappear = () => {
     });
   }
 };
+navDisappear()
 
 const addData = (formName, formEmail, formMsg) => {
   const myStorage = { formName, formEmail, formMsg };
@@ -73,5 +75,3 @@ const displayData = () => {
 displayData();
 submission();
 showError();
-navDisappear();
-navAppear();
