@@ -35,7 +35,8 @@ const navAppear = () => {
     nav.classList.toggle('nav-active');
     menuIcon.classList.toggle('turn');
   });
-};;
+};
+
 navAppear();
 
 const navDisappear = () => {
@@ -46,7 +47,8 @@ const navDisappear = () => {
     });
   }
 };
-navDisappear()
+
+navDisappear();
 
 const addData = (formName, formEmail, formMsg) => {
   const myStorage = { formName, formEmail, formMsg };
