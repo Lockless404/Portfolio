@@ -1,5 +1,5 @@
 const menuIcon = document.querySelector('.menuIcon');
-const nav = document.querySelector('.navLst');
+const nav = document.querySelector('.navList');
 const linkedWord = document.querySelectorAll('.navWord');
 const modal = document.querySelector('.modals');
 const buttonOne = document.querySelector('.cardBtn.one');

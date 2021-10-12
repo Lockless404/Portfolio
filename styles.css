@@ -38,7 +38,7 @@ nav {
   padding-left: 30px;
 }
 
-.navLst {
+.navList {
   position: absolute;
   right: 0;
   height: 650px;
@@ -1017,7 +1017,7 @@ textarea {
     padding-bottom: 0;
   }
 
-  .navLst {
+  .navList {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
