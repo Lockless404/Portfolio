@@ -1228,7 +1228,7 @@ textarea {
   .modalImage {
     grid-column: 1 / span 1;
     grid-row: 4 / span 8;
-    max-width: unset;
+    max-width: 715px;
   }
   
   .modalPara {
@@ -1242,7 +1242,8 @@ textarea {
     grid-column: 2 / span 1;
     grid-row: 10 / span 1;
     justify-content: flex-start;
-    margin-bottom: 0;
+    position: relative;
+    top: 14px;
   }
 
   #projects {

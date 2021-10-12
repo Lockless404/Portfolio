@@ -91,23 +91,67 @@ const projectCollection = [
   },
 ];
 
+for ( let n = 0; n < button.length; n += 1) {
+  let projects = projectCollection[n];
+  const index = n;
+  modal.innerHTML = `
+  <div class="modal1" id="modal1">  
+      <div class="modalHeader">
+        <div class="modalHeading">${projects.heading}</div>
+        <button class="modalButtonClose">&times;</button>
+      </div>
+      <div class="modalBadges">
+        <ul>
+          <li class="modalbadge one">${projects.tag1}</li>
+          <li class="modalbadge two">${projects.tag2}</li>
+          <li class="modalbadge three">${projects.tag3}</li>
+        </ul>
+      </div>
+      <div class="modalImage"><img class= "noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>
+      <div class="modalPara">${projects.paragraph}</div>
+      <div class="modalButtons">
+          <button class="modalButton Live">
+            See Live
+            <img class= "buttonIcons live" src="images/liveIcon.png" alt="Live Icon">
+          </button>
+          <button class="modalButton Source">
+            See Source
+            <img class="buttonIcons Source" src="images/IconGitHubWhite.png" alt = "Github Icon">
+          </button>
+      </div>
+    </div>
+  </section>
+  `;
+}
 
   
-window.addEventListener('DOMContentLoaded', () => {
-  let n = 0;
-  let projects = projectCollection[n]
-  modal.innerHTML = ``;
-  
+  function objDisplay(index) {
+    const modalHeading = document.querySelector('.modalHeading');
+    const modalTag1 = document.querySelector('.modalbadge.one');
+    const modalTag2 = document.querySelector('.modalbadge.two');
+    const modalTag3 = document.querySelector('.modalbadge.three');
+    const modalParagraph = document.querySelector('.modalPara');
+    const imgLink = document.querySelector('.modalImage');
+    const dataObj = projectCollection[index];
+
+    modalHeading.innerHTML = dataObj.heading;
+    modalTag1.innerHTML = dataObj.tag1;
+    modalTag2.innerHTML = dataObj.tag2;
+    modalTag3.innerHTML = dataObj.tag3;
+    modalParagraph.innerHTML = dataObj.paragraph;
+    imgLink.outerHTML = dataObj.imageLink;
+    modal.classList.add('modal-appear');
+    }
+
+
   const popUp1 = () => {
-    projectButton.addEventListener('click', () => {
-      modal.classList.add('modal-appear');
-    });
+    projectButton.addEventListener('click', objDisplay);
   };
+
   const popUpAppear = () => {
-    button[0].addEventListener('click', () => {
-      modal.classList.add('modal-appear');
-    });
+    button[0].addEventListener('click',objDisplay);
   };
+  
   // const popUpDisappear = () => {
   //   modalCloseButton.addEventListener('click', () => {
   //     modal.classList.remove('modal-appear');
@@ -118,23 +162,22 @@ window.addEventListener('DOMContentLoaded', () => {
   popUpAppear()
   popUp1();  
 
-  
-  
-  
-  
-});
+
 
 
 
 // const popUpAppear = () => {
 //   buttonOne.addEventListener('click', () => {
 //     modal.classList.add('modal-appear');
-//     document.querySelector('.modalHeading').innerHTML = projectCollection.project1.heading;
-//     document.querySelector('.modalbadge.one').innerHTML = projectCollection.project1.tag1;
-//     document.querySelector('.modalbadge.two').innerHTML = projectCollection.project1.tag2;
-//     document.querySelector('.modalbadge.three').innerHTML = projectCollection.project1.tag3;
-//     document.querySelector('.modalPara').innerHTML = projectCollection.project1.paragraph;
-//   });
+//     const heading = document.querySelector('.modalHeading');
+//     const tag1 = document.querySelector('.modalbadge.one');
+//     const tag2 = document.querySelector('.modalbadge.two');
+//     const tag3 = document.querySelector('.modalbadge.three');
+//     const paragraph = document.querySelector('.modalPara');
+//     const imgLink = document.querySelector('.modalImage');
+//     const btnSource = document.querySelector('.buttonIcons.Source')
+//     const btnLive = document.querySelector('.buttonIcons.live')
+// //   });
 //   buttonTwo.addEventListener('click', () => {
 //     modal.classList.add('modal-appear');
 //     document.querySelector('.modalHeading').innerHTML = projectCollection.project2.heading;
@@ -184,4 +227,3 @@ window.addEventListener('DOMContentLoaded', () => {
 
 navDisappear();
 navAppear();
-popUpAppear();
