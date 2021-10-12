@@ -55,10 +55,6 @@ nav {
   display: block;
 }
 
-.nav-disapear {
-  display: none;
-}
-
 .navWord {
   border-bottom: 1px solid rgb(104, 99, 99);
   margin: 30px;
