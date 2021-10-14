@@ -436,10 +436,10 @@ h2 {
 }
 
 .modalImage {
-width: 100%;
-max-width: 445px;
-height: 100%;
-box-sizing: border-box;
+  width: 100%;
+  max-width: 445px;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .noTenImg {
@@ -1241,7 +1241,6 @@ textarea {
     grid-column: 1 / span 2;
     grid-row: 3 / span 8;
     max-width: 715px;
-
   }
   
   .modalPara {

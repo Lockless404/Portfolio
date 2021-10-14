@@ -4,7 +4,6 @@ const linkedWord = document.querySelectorAll('.navWord');
 const modal = document.querySelector('.modals');
 const button = document.querySelectorAll('.cardBtn');
 const projectButton = document.querySelector('.seeButton');
-const modalButtonClose = document.querySelector('.modalButtonClose');
 
 const projectCollection = [
   {
@@ -115,7 +114,7 @@ const navDisappear = () => {
 };
 
 function render(n) {
-    modal.innerHTML = `
+  modal.innerHTML = `
     <div class="modal1" id="modal1">  
         <div class="modalHeader">
           <div class="modalHeading">${projectCollection[n].heading}</div>
@@ -142,26 +141,24 @@ function render(n) {
         </div>
       </div>
     </section>
-    `;
-  
-};
-
+  `;
+}
 
 projectButton.addEventListener('click', () => {
   modal.classList.add('modal-appear');
   render(0);
 });
 
-for (let i = 0; i < button.length; i++) {
+for (let i = 0; i < button.length; i += 1) {
   button[i].addEventListener('click', () => {
     modal.classList.add('modal-appear');
-    render(i);  
-    });
+    render(i);
+  });
 }
 
 function modalClose() {
   modal.classList.remove('modal-appear');
-};
+}
 
 const addData = (formName, formEmail, formMsg) => {
   const myStorage = { formName, formEmail, formMsg };
@@ -192,3 +189,4 @@ submission();
 showError();
 navAppear();
 navDisappear();
+modalClose();
