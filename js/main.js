@@ -2,31 +2,9 @@ const menuIcon = document.querySelector('.menuIcon');
 const nav = document.querySelector('.navLst');
 const linkedWord = document.querySelectorAll('.navWord');
 const modal = document.querySelector('.modals');
-const button = document.querySelectorAll('.cardBtn')
-const buttonOne = document.querySelector('.cardBtn.one');
-const buttonTwo = document.querySelector('.cardBtn.two');
-const buttonThree = document.querySelector('.cardBtn.three');
-const buttonFour = document.querySelector('.cardBtn.four');
-const buttonFive = document.querySelector('.cardBtn.five');
-const buttonSix = document.querySelector('.cardBtn.six');
+const button = document.querySelectorAll('.cardBtn');
 const projectButton = document.querySelector('.seeButton');
-const modalCloseButton = document.querySelector('.modalButtonClose');
-
-const navAppear = () => {
-  menuIcon.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
-    menuIcon.classList.toggle('turn');
-  });
-};
-
-const navDisappear = () => {
-  for (let i = 0; i < linkedWord.length; i += 1) {
-    linkedWord[i].addEventListener('click', () => {
-      nav.classList.remove('nav-active');
-      menuIcon.classList.remove('turn');
-    });
-  }
-};
+const modalButtonClose = document.querySelector('.modalButtonClose');
 
 const projectCollection = [
   {
@@ -91,138 +69,71 @@ const projectCollection = [
   },
 ];
 
-for ( let n = 0; n < button.length; n += 1) {
-  let projects = projectCollection[n];
-  const index = n;
-  modal.innerHTML = `
-  <div class="modal1" id="modal1">  
-      <div class="modalHeader">
-        <div class="modalHeading">${projects.heading}</div>
-        <button class="modalButtonClose">&times;</button>
+const navAppear = () => {
+  menuIcon.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+    menuIcon.classList.toggle('turn');
+  });
+};
+
+const navDisappear = () => {
+  for (let i = 0; i < linkedWord.length; i += 1) {
+    linkedWord[i].addEventListener('click', () => {
+      nav.classList.remove('nav-active');
+      menuIcon.classList.remove('turn');
+    });
+  }
+};
+
+function render(n) {
+    modal.innerHTML = `
+    <div class="modal1" id="modal1">  
+        <div class="modalHeader">
+          <div class="modalHeading">${projectCollection[n].heading}</div>
+          <button class="modalButtonClose" onclick="modalClose()" >&times;</button>
+        </div>
+        <div class="modalBadges">
+          <ul>
+            <li class="modalbadge one">${projectCollection[n].tag1}</li>
+            <li class="modalbadge two">${projectCollection[n].tag2}</li>
+            <li class="modalbadge three">${projectCollection[n].tag3}</li>
+          </ul>
+        </div>
+        <div class="modalImage"><img class= "noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>
+        <div class="modalPara">${projectCollection[n].paragraph}</div>
+        <div class="modalButtons">
+            <button class="modalButton Live">
+              See Live
+              <img class= "buttonIcons live" src="images/liveIcon.png" alt="Live Icon">
+            </button>
+            <button class="modalButton Source">
+              See Source
+              <img class="buttonIcons Source" src="images/IconGitHubWhite.png" alt = "Github Icon">
+            </button>
+        </div>
       </div>
-      <div class="modalBadges">
-        <ul>
-          <li class="modalbadge one">${projects.tag1}</li>
-          <li class="modalbadge two">${projects.tag2}</li>
-          <li class="modalbadge three">${projects.tag3}</li>
-        </ul>
-      </div>
-      <div class="modalImage"><img class= "noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>
-      <div class="modalPara">${projects.paragraph}</div>
-      <div class="modalButtons">
-          <button class="modalButton Live">
-            See Live
-            <img class= "buttonIcons live" src="images/liveIcon.png" alt="Live Icon">
-          </button>
-          <button class="modalButton Source">
-            See Source
-            <img class="buttonIcons Source" src="images/IconGitHubWhite.png" alt = "Github Icon">
-          </button>
-      </div>
-    </div>
-  </section>
-  `;
+    </section>
+    `;
+  
+};
+
+
+projectButton.addEventListener('click', () => {
+  modal.classList.add('modal-appear');
+  render(0);
+});
+
+for (let i = 0; i < button.length; i++) {
+  button[i].addEventListener('click', () => {
+    modal.classList.add('modal-appear');
+    render(i);  
+    });
 }
 
-  
-  function objDisplay(index) {
-    const modalHeading = document.querySelector('.modalHeading');
-    const modalTag1 = document.querySelector('.modalbadge.one');
-    const modalTag2 = document.querySelector('.modalbadge.two');
-    const modalTag3 = document.querySelector('.modalbadge.three');
-    const modalParagraph = document.querySelector('.modalPara');
-    const imgLink = document.querySelector('.modalImage');
-    const dataObj = projectCollection[index];
+function modalClose() {
+  modal.classList.remove('modal-appear');
+}
 
-    modalHeading.innerHTML = dataObj.heading;
-    modalTag1.innerHTML = dataObj.tag1;
-    modalTag2.innerHTML = dataObj.tag2;
-    modalTag3.innerHTML = dataObj.tag3;
-    modalParagraph.innerHTML = dataObj.paragraph;
-    imgLink.outerHTML = dataObj.imageLink;
-    modal.classList.add('modal-appear');
-    }
-
-
-  const popUp1 = () => {
-    projectButton.addEventListener('click', objDisplay);
-  };
-
-  const popUpAppear = () => {
-    button[0].addEventListener('click',objDisplay);
-  };
-  
-  // const popUpDisappear = () => {
-  //   modalCloseButton.addEventListener('click', () => {
-  //     modal.classList.remove('modal-appear');
-  //   });
-  // };
-  
-  //popUpDisappear();
-  popUpAppear()
-  popUp1();  
-
-
-
-
-
-// const popUpAppear = () => {
-//   buttonOne.addEventListener('click', () => {
-//     modal.classList.add('modal-appear');
-//     const heading = document.querySelector('.modalHeading');
-//     const tag1 = document.querySelector('.modalbadge.one');
-//     const tag2 = document.querySelector('.modalbadge.two');
-//     const tag3 = document.querySelector('.modalbadge.three');
-//     const paragraph = document.querySelector('.modalPara');
-//     const imgLink = document.querySelector('.modalImage');
-//     const btnSource = document.querySelector('.buttonIcons.Source')
-//     const btnLive = document.querySelector('.buttonIcons.live')
-// //   });
-//   buttonTwo.addEventListener('click', () => {
-//     modal.classList.add('modal-appear');
-//     document.querySelector('.modalHeading').innerHTML = projectCollection.project2.heading;
-//     document.querySelector('.modalbadge.one').innerHTML = projectCollection.project2.tag1;
-//     document.querySelector('.modalbadge.two').innerHTML = projectCollection.project2.tag2;
-//     document.querySelector('.modalbadge.three').innerHTML = projectCollection.project2.tag3;
-//     document.querySelector('.modalPara').innerHTML = projectCollection.project2.paragraph;
-//   });
-
-//   buttonThree.addEventListener('click', () => {
-//     modal.classList.add('modal-appear');
-//     document.querySelector('.modalHeading').innerHTML = projectCollection.project3.heading;
-//     document.querySelector('.modalbadge.one').innerHTML = projectCollection.project3.tag1;
-//     document.querySelector('.modalbadge.two').innerHTML = projectCollection.project3.tag2;
-//     document.querySelector('.modalbadge.three').innerHTML = projectCollection.project3.tag3;
-//     document.querySelector('.modalPara').innerHTML = projectCollection.project3.paragraph;
-//   });
-
-//   buttonFour.addEventListener('click', () => {
-//     modal.classList.add('modal-appear');
-//     document.querySelector('.modalHeading').innerHTML = projectCollection.project4.heading;
-//     document.querySelector('.modalbadge.one').innerHTML = projectCollection.project4.tag1;
-//     document.querySelector('.modalbadge.two').innerHTML = projectCollection.project4.tag2;
-//     document.querySelector('.modalbadge.three').innerHTML = projectCollection.project4.tag3;
-//     document.querySelector('.modalPara').innerHTML = projectCollection.project4.paragraph;
-//   });
-
-//   buttonFive.addEventListener('click', () => {
-//     modal.classList.add('modal-appear');
-//     document.querySelector('.modalHeading').innerHTML = projectCollection.project5.heading;
-//     document.querySelector('.modalbadge.one').innerHTML = projectCollection.project5.tag1;
-//     document.querySelector('.modalbadge.two').innerHTML = projectCollection.project5.tag2;
-//     document.querySelector('.modalbadge.three').innerHTML = projectCollection.project5.tag3;
-//     document.querySelector('.modalPara').innerHTML = projectCollection.project5.paragraph;
-//   });
-
-//   buttonSix.addEventListener('click', () => {
-//     modal.classList.add('modal-appear');
-//     document.querySelector('.modalHeading').innerHTML = projectCollection.project6.heading;
-//     document.querySelector('.modalbadge.one').innerHTML = projectCollection.project6.tag1;
-//     document.querySelector('.modalbadge.two').innerHTML = projectCollection.project6.tag2;
-//     document.querySelector('.modalbadge.three').innerHTML = projectCollection.project6.tag3;
-//     document.querySelector('.modalPara').innerHTML = projectCollection.project6.paragraph;
-//   });
-// };
 
 
 navDisappear();

@@ -379,7 +379,7 @@ h2 {
 .modal1 {
   height: 92%;
   width: 89%;
-  padding: 15px 15px 15px 15px;
+  padding: 15px 25px 15px 15px;
   background-color: #fff;
   box-sizing: border-box;
   display: flex;
@@ -1204,42 +1204,47 @@ textarea {
     width: 80%;
     height: 70%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 33% 34%;
     grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     grid-column-gap: 20px;
   }
 
   .modalHeader {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
     grid-row: 1 / span 1;
   }
 
   .modalButtonClose {
     position: relative;
-    left: -25px;
+    left: -35px;
     top: 0;
   }
 
   .modalBadges {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
+    position: relative;
+    top: -45px;
   }
 
   .modalImage {
-    grid-column: 1 / span 1;
-    grid-row: 4 / span 8;
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 8;
     max-width: 715px;
+
   }
   
   .modalPara {
     font-size: 17px;
     line-height: 30px;
-    grid-column: 2 / span 1;
-    grid-row: 4 / span 3;
+    margin-right: 10px;
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 3;
+    width: 90%;
   }
 
   .modalButtons {
-    grid-column: 2 / span 1;
+    grid-column: 3 / span 1;
     grid-row: 10 / span 1;
     justify-content: flex-start;
     position: relative;
