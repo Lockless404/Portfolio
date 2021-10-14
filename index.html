@@ -14,7 +14,7 @@
   <nav>
     <a href="" class="nameLink">John Doe</a>
     <div>
-      <ul class="navLst">
+      <ul class="navList">
         <li class="navWord" ><a class="aWord" href="#projects">Portfolio</a></li>
         <li class="navWord" ><a class="aWord" href="#aboutMe">About</a></li>
         <li class="navWord" ><a class="aWord" href="#formPage">Contact</a></li>
@@ -28,7 +28,7 @@
     </div>
   </nav>
   <section class="firstPage">
-    <h1 class="heyHead">Hey There. I'm Hamza</h1>
+    <h1 class="firstPageHeading">Hey There. I'm Hamza</h1>
     <h2 class="developerHead">I’am a Software Developer</h2>
     <p class="firstParagraph">I can help you build a product , feature or website Look through some of my work and
       experience! If you like what you see and have a project you need coded,
@@ -48,7 +48,7 @@
   </section>
   <section><h2  class="recentWorks"><span> Recent Works</span></h2></section>
   <section class="secondPage">
-    <img src="images/yogaWoman.png" class="yogaImage" alt="Woman doing Yoga">
+    <img src="images/yogaWoman.png" class="yogaImage" alt="Woman performing yoga in seated position">
     <h3 class="multiStories">Multi-Post Stories</h3>
     <p class="secondPara">A daily selection of privately personalized reads; no accounts or sign-ups required. has been
       the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
@@ -61,12 +61,12 @@
     <button class="seeButton">See Project</button>
   </section>
   
-  
   <section class="modals">
     
   </section>
   
   
+
   <section id="projects">
     <div class="cards">
       <h3>Profesional Art Printing Data</h3>
@@ -180,10 +180,11 @@
     <h2 class="about-me">
       I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
     </h2>
-    <form action="https://formspree.io/f/xvodlvrj" method="POST">
+    <form id = "form" action="https://formspree.io/f/xvodlvrj" method="POST">
       <input type="text" name="name" id="name" placeholder="Full name" class="input-name" required minlength="1" maxlength="30"> <br>
       <input type="email" id="email" placeholder="Email address" class="input-email" required minlength="1"><br>
-      <textarea name="text" class="inputText" minlength="1" required maxlength="500">Enter text here</textarea>
+      <span class="error" aria-live="polite">error</span>
+      <textarea name="text" id="msg" class="inputText" placeholder="Enter text here" minlength="1" required maxlength="500"></textarea>
       <button class="touch-button" type="submit">Get in touch</button>
     </form>
   </section>

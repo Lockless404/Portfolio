@@ -38,7 +38,7 @@ nav {
   padding-left: 30px;
 }
 
-.navLst {
+.navList {
   position: absolute;
   right: 0;
   height: 650px;
@@ -53,10 +53,6 @@ nav {
 
 .nav-active {
   display: block;
-}
-
-.nav-disapear {
-  display: none;
 }
 
 .navWord {
@@ -925,6 +921,20 @@ textarea {
   right: 20px;
 }
 
+.error {
+  width: 295px;
+  padding: 0;
+  font-size: 13px;
+  color: #fff;
+  background-color: #c42828;
+  box-sizing: border-box;
+  display: none;
+}
+
+.error-active {
+  display: block;
+}
+
 .touch-button {
   padding: 15px;
   background-color: #ff6b00;
@@ -1017,7 +1027,7 @@ textarea {
     padding-bottom: 0;
   }
 
-  .navLst {
+  .navList {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -1075,7 +1085,7 @@ textarea {
     text-align: left;
   }
 
-  .heyHead {
+  .firstPageHeading {
     position: relative;
     left: -400px;
     top: 125px;
