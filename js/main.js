@@ -37,8 +37,6 @@ const navAppear = () => {
   });
 };
 
-navAppear();
-
 const navDisappear = () => {
   for (let i = 0; i < linkedWord.length; i += 1) {
     linkedWord[i].addEventListener('click', () => {
@@ -47,8 +45,6 @@ const navDisappear = () => {
     });
   }
 };
-
-navDisappear();
 
 const addData = (formName, formEmail, formMsg) => {
   const myStorage = { formName, formEmail, formMsg };
@@ -77,3 +73,5 @@ const displayData = () => {
 displayData();
 submission();
 showError();
+navAppear();
+navDisappear();
