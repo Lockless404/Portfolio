@@ -394,13 +394,13 @@ h2 {
 
 .modalHeading {
   font-family: 'Roboto', sans-serif;
-  font-size: 22px;
+  font-size: 3vh;
   font-style: normal;
   font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 40px;
+  height: 5vh;;
   width: 235px;
 }
 
@@ -415,6 +415,7 @@ h2 {
 
 .modalBadges {
   width: 100%;
+  height: 10.5vh;
 }
 
 .modalBadges ul {
@@ -438,7 +439,7 @@ h2 {
 .modalImage {
   width: 100%;
   max-width: 445px;
-  height: 100%;
+  height: 26vh;
   box-sizing: border-box;
 }
 
@@ -449,7 +450,7 @@ h2 {
 
 .modalPara {
   font-family: 'Inter', sans-serif;
-  font-size: 13px;
+  font-size: 1.65vh;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -460,6 +461,7 @@ h2 {
 .modalButtons {
   display: flex;
   width: 100%;
+  height: 8vh;
   justify-content: space-between;
 }
 
@@ -1224,6 +1226,11 @@ textarea {
     grid-row: 1 / span 1;
   }
 
+  .modalHeading {
+    font-size: 1.7vw;
+    width: unset;
+  }
+
   .modalButtonClose {
     position: relative;
     left: -35px;
@@ -1234,17 +1241,22 @@ textarea {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
     position: relative;
-    top: -45px;
+    top: -35px;
+  }
+
+  .modalBadges ul {
+    justify-content: space-between;
   }
 
   .modalImage {
     grid-column: 1 / span 2;
     grid-row: 3 / span 8;
-    max-width: 715px;
+    max-width: unset;
+    height: 100%;
   }
 
   .modalPara {
-    font-size: 17px;
+    font-size: 1.1vw;
     line-height: 30px;
     margin-right: 10px;
     grid-column: 3 / span 1;
@@ -1257,7 +1269,7 @@ textarea {
     grid-row: 10 / span 1;
     justify-content: flex-start;
     position: relative;
-    top: 14px;
+    top: -7px;
   }
 
   #projects {
