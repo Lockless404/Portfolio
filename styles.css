@@ -373,14 +373,14 @@ h2 {
 }
 
 .modal1 {
-  height: 700px;
-  width: 335px;
-  padding: 15px 15px 15px 15px;
+  height: 92%;
+  width: 89%;
+  padding: 15px 25px 15px 15px;
   background-color: #fff;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   opacity: 1;
 }
@@ -389,18 +389,18 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 300px;
+  width: 100%;
 }
 
 .modalHeading {
   font-family: 'Roboto', sans-serif;
-  font-size: 22px;
+  font-size: 3vh;
   font-style: normal;
   font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 40px;
+  height: 5vh;
   width: 235px;
 }
 
@@ -411,6 +411,11 @@ h2 {
   background-color: #fff;
   font-size: 25px;
   cursor: pointer;
+}
+
+.modalBadges {
+  width: 100%;
+  height: 10.5vh;
 }
 
 .modalBadges ul {
@@ -431,25 +436,32 @@ h2 {
   list-style: none;
 }
 
+.modalImage {
+  width: 100%;
+  max-width: 445px;
+  height: 26vh;
+  box-sizing: border-box;
+}
+
 .noTenImg {
-  width: 300px;
-  height: 220px;
+  width: inherit;
+  height: inherit;
 }
 
 .modalPara {
   font-family: 'Inter', sans-serif;
-  font-size: 13px;
+  font-size: 1.65vh;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0;
   text-align: left;
-  width: 300px;
+  width: 100%;
 }
 
 .modalButtons {
   display: flex;
-  width: 300px;
+  width: 100%;
+  height: 8vh;
   justify-content: space-between;
 }
 
@@ -1201,34 +1213,63 @@ textarea {
 
   .modal1 {
     align-items: flex-start;
-    flex-wrap: wrap;
-    width: 1152px;
-    height: 620px;
+    width: 80%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-column-gap: 20px;
   }
 
   .modalHeader {
-    width: 1100px;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
   }
 
-  .noTenImg {
-    width: 630px;
-    height: 465px;
+  .modalHeading {
+    font-size: 1.7vw;
+    width: unset;
+  }
+
+  .modalButtonClose {
+    position: relative;
+    left: -35px;
+    top: 0;
+  }
+
+  .modalBadges {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    position: relative;
+    top: -35px;
+  }
+
+  .modalBadges ul {
+    justify-content: space-between;
+  }
+
+  .modalImage {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 8;
+    max-width: unset;
+    height: 100%;
   }
 
   .modalPara {
-    width: 450px;
-    font-size: 17px;
+    font-size: 1.1vw;
     line-height: 30px;
-    position: relative;
-    left: -450px;
-    top: 124px;
+    margin-right: 10px;
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 3;
+    width: 90%;
   }
 
   .modalButtons {
-    width: 260px;
+    grid-column: 3 / span 1;
+    grid-row: 10 / span 1;
+    justify-content: flex-start;
     position: relative;
-    top: 0;
-    left: -455px;
+    top: -7px;
   }
 
   #projects {
@@ -1239,9 +1280,6 @@ textarea {
     align-content: space-between;
     padding-top: 24px;
     width: 1195px;
-    position: relative;
-    top: 0;
-    left: 35px;
     grid-column-gap: 20px;
   }
 
