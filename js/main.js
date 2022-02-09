@@ -7,64 +7,64 @@ const projectButton = document.querySelector('.seeButton');
 
 const projectCollection = [
   {
-    heading: 'Multi Post Stories',
-    tag1: 'html',
-    tag3: 'Bootstrap',
-    tag2: 'Ruby on rails',
-    imageLink: '<div class="modalImage"><img class="noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>',
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    liveLink: '',
-    gitLink: '',
+    heading: 'Football Standings',
+    tag1: 'Javascript',
+    tag3: 'React',
+    tag2: 'Redux',
+    imageLink: 'images/portfolio/footballStandings.png',
+    paragraph: "'Football Standings' is a website for Football fans. It is a fairly simple website which displays the fooball standings of a number of leagues over a number of Years By building this project, I build on my experiance with React, React-Redux, jest, React-routers and Middleware such as Thunk.",
+    liveLink: 'https://football-standings-lockless404.netlify.app/',
+    gitLink: 'https://github.com/Lockless404/footballStandings',
   },
   {
-    heading: 'Empty',
-    tag1: 'Empty',
-    tag3: 'Empty',
-    tag2: 'Empty',
-    imageLink: '<div class="modalImage"><img class="noTenImg" src="imagestenBig.png" alt="Big Number 10"></div>',
-    paragraph: 'Empty',
-    liveLink: '',
-    gitLink: '',
+    heading: 'Art Exhibition',
+    tag1: 'Javascript',
+    tag3: 'Jest',
+    tag2: 'Kanban',
+    imageLink: 'images/portfolio/webApiHome.png',
+    paragraph: 'This project is about an exhibition app used to display, comment on and reserve art. The page was built using JavaScript and bundled with Webpack and uses API calls. The webapp has 3 user interfaces: Homepage made by Molnar Emese, Comments pop-up Made by Jeff Kayombo and Reservation pop-up Made by Hamza Tarar',
+    liveLink: 'https://cocky-shockley-f14242.netlify.app/',
+    gitLink: 'https://github.com/Lockless404/api-Webapp',
   },
   {
-    heading: 'Blah',
-    tag1: 'Blah',
-    tag3: 'Blah',
-    tag2: 'Blah',
-    imageLink: '<div class="modalImage"><img class="noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>',
-    paragraph: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah',
-    liveLink: '',
-    gitLink: '',
+    heading: 'Leaderboard',
+    tag1: 'Javascript',
+    tag3: 'Api',
+    tag2: 'Webpack',
+    imageLink: 'images/portfolio/Leaderboard.png',
+    paragraph: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.',
+    liveLink: 'https://naughty-payne-dd348d.netlify.app/',
+    gitLink: 'https://github.com/Lockless404/Leaderboard',
   },
   {
-    heading: 'Meh',
-    tag1: 'Meh',
-    tag3: 'Meh',
-    tag2: 'Meh',
-    imageLink: '<div class="modalImage"><img class="noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>',
-    paragraph: 'Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh Meh',
-    liveLink: '',
-    gitLink: '',
+    heading: 'Fantasy Bookstore',
+    tag1: 'Javascript',
+    tag3: 'React',
+    tag2: 'Redux',
+    imageLink: 'images/portfolio/app_screenshot.png',
+    paragraph: '"Fantasy Bookstore" is a website for Fantasy book fans. It is a bookstore that allows the user to interact with it in the following manner: Add Books to a list, remove selected book, use API to store the given response.',
+    liveLink: 'https://fantasy-bookstore.netlify.app/',
+    gitLink: 'https://github.com/Lockless404/BookStore',
   },
   {
-    heading: 'Boohoo',
-    tag1: 'Boohoo',
-    tag3: 'Boohoo',
-    tag2: 'Boohoo',
-    imageLink: '<div class="modalImage"><img class="noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>',
-    paragraph: 'Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo Boohoo',
-    liveLink: '',
-    gitLink: '',
+    heading: 'Math Calculator',
+    tag1: 'Javascript',
+    tag3: 'React',
+    tag2: 'Router',
+    imageLink: 'images/portfolio/calculator.png',
+    paragraph: 'Calculator app created using React. Capable of doing all basic mathematics functions.',
+    liveLink: 'https://compassionate-beaver-6b1347.netlify.app/',
+    gitLink: 'https://github.com/Lockless404/magicMath',
   },
   {
-    heading: 'Kak',
-    tag1: 'Kak',
-    tag3: 'Kak',
-    tag2: 'Kak',
-    imageLink: '<div class="modalImage"><img class="noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>',
-    paragraph: 'Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak',
-    liveLink: '',
-    gitLink: '',
+    heading: 'Space Traveller',
+    tag1: 'Javascript',
+    tag3: 'React',
+    tag2: 'Redux',
+    imageLink: 'images/portfolio/spacetrarveller.png',
+    paragraph: 'Space Traveller hub is a web application that works with the real live data from the SpaceX API. Its a web application for a company that provides commercial and scientific space travel services.',
+    liveLink: 'https://hzrspacetraveller.netlify.app/',
+    gitLink: 'https://github.com/RolandM99/SpaceTraveller',
   },
 ];
 
@@ -127,15 +127,15 @@ function render(n) {
             <li class="modalbadge three">${projectCollection[n].tag3}</li>
           </ul>
         </div>
-        <div class="modalImage"><img class= "noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>
+        <div class="modalImage"><img class= "noTenImg" src="${projectCollection[n].imageLink}" alt="Big Number 10"></div>
         <div class="modalPara">${projectCollection[n].paragraph}</div>
         <div class="modalButtons">
             <button class="modalButton Live">
-              See Live
+              <a href="${projectCollection[n].liveLink}">See Live</a>
               <img class= "buttonIcons live" src="images/liveIcon.png" alt="Live Icon">
             </button>
             <button class="modalButton Source">
-              See Source
+              <a href="${projectCollection[n].gitLink}">See Source</a>
               <img class="buttonIcons Source" src="images/IconGitHubWhite.png" alt = "Github Icon">
             </button>
         </div>

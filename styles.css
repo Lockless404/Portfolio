@@ -529,6 +529,11 @@ h2 {
   padding-top: 24px;
 }
 
+a {
+  text-decoration: none;
+  color: #f4f1f0;
+}
+
 .cards {
   background-image: url(images/cardBack.png);
   background-repeat: no-repeat;
@@ -761,6 +766,10 @@ h3 {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.03em;
+  color: #f55800;
+}
+
+a:hover {
   color: #f55800;
 }
 
